@@ -1,0 +1,53 @@
+title: erkSpace - a personal blog
+description: Erkut Evirgen - Personal Blog
+author: Erkut Evirgen
+github: https://github.com/eevirgen
+about: .Computer Engineer & Tech Consultant <br/>.Founder of <a href='http://wisen.tech' target='_blank'>Wisen.tech</a><br/>.Rock'n Roll Nerd<br/>@London
+disqus_shortname: erkSpace
+google_analytics: UA-19234700-1
+avatar_url: /static/img/avatar.jpg
+
+enableTags: true
+tagarray: []
+
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
+
+social:
+    - icon: fa-facebook
+      link: "https://www.facebook.com/erkut.evirgen"
+    - icon: fa-twitter
+      link: "https://twitter.com/eevirgen"
+    - icon: fa-linkedin
+      link: "https://uk.linkedin.com/in/erkutevirgen"
+    - icon: fa-instagram
+      link: "http://instagram.com/eevirgen"
+    - icon: fa-github
+      link: "https://github.com/eevirgen"
+
+share:
+  twitter_username: eevirgen
+  fb_appid: 217469665438549
+
+urls:
+    - text: About Me
+      url: /about/
+    - text: I am on Twitter
+      url: /twitter/
+
+url: "http://erkut.me"
+baseurl: ""
+paginate: 5
+per_page: 5
+paginate_path: "/page/:num/"
+markdown: kramdown
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
