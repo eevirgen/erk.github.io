@@ -23,6 +23,6 @@ As a side project, I am working on my musical background and composing my own so
 
 I created this blog to display my opinions on various subjects; mainly about software development processes, entrepreneurship, technology and music.
 
-Anyway, if you wanna find out more or share something with me please drop a message:
+Anyway, if you wanna find out more or share something with me please drop a message :
 
-email: erkut.evirgen[at]gmail.com
+email: erkut.evirgen[at]wisen.tech
