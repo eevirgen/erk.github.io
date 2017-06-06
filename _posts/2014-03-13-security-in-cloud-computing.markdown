@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Security in Cloud Computing"
-date:   2013-12-23 00:18:23 +0700
+date:   2014-03-13 00:00:23 +0700
 categories: [security, cloud computing, SaaS, PasS, IaaS, DaaS]
 permalink: /security-in-cloud-computing/
-thumb : "Cloud Computing" is recently one of the biggest trends of computer techs that comes with some swanky terms. I strongly believe “Security for cloud-based data” will be the biggest concern in the near future.
+thumb : Cloud Computing is recently one of the biggest trends of computer techs that comes with some swanky terms. I strongly believe "Security for cloud-based data" will be the biggest concern in the near future.
 ---
 <img src="/static/img/security.png">
 <br />
