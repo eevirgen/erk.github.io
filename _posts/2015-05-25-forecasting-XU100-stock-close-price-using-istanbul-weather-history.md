@@ -5,10 +5,12 @@ date:   2015-06-25 12:40:10 +0000
 categories: [machine-learning, data-mining, time-series-analysis, weka]
 permalink: /forecasting-stock-close-price-using-istanbul-weather-history/
 thumb : I needed to find out whether forecast reports had affected Istanbul stock market's closing prices. I just wanted to try what can be done with time series analysis methods..
+author : "Erkut Evirgen"
+
 ---
 <img src="/static/img/storm.jpg" heigth="200px" width="1000px">
-
-I needed to find out whether forecast reports had affected Istanbul stock market's closing prices. (Actually you possibly guess the answer) I just wanted to try what can be done with <a href="http://en.wikipedia.org/wiki/Time_series" target="_blank">time series</a> analysis methods and <a href="http://www.cs.waikato.ac.nz/ml/weka/" target="_blank">WEKA</a> and display it then prepare a report accordingly. <br />I downloaded last 1 year Istanbul weather data from <a href="http://www.wunderground.com/" target="_blank">http://www.wunderground.com/</a> and I got Istanbul last year's BIST index close values from my lovely friend <a href="http://kahramani.tumblr.com" target="blank_">İbrahim Kahraman</a>. He is a master of these financial stuff.
+<br /><br />
+I needed to find out whether forecast reports had affected Istanbul stock market's closing prices. (Actually you possibly guess the answer <img width="2.5%" src="/static/img/face2.gif-c200"> <img src="/static/img/face_1.gif">) I just wanted to try what can be done with <a href="http://en.wikipedia.org/wiki/Time_series" target="_blank">time series</a> analysis methods and <a href="http://www.cs.waikato.ac.nz/ml/weka/" target="_blank">WEKA</a> and display it then prepare a report accordingly. <br />I downloaded last 1 year Istanbul weather data from <a href="http://www.wunderground.com/" target="_blank">http://www.wunderground.com/</a> and I got Istanbul last year's BIST index close values from my lovely friend <a href="http://kahramani.tumblr.com" target="blank_">Ibrahim Kahraman</a>. He is a master of these financial stuff.
 
 **Introduction**
 

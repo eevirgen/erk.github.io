@@ -5,6 +5,8 @@ date:   2013-12-23 00:18:23 +0700
 categories: [music-video, rem]
 permalink: /rem-uberlin/
 thumb : Aaron Johnson is pulling some pretty sweet shapes up and down London’s aching hip Brick Lane. It’s well worth a few watches.
+author : "Erkut Evirgen"
+
 ---
 
 <iframe src="https://player.vimeo.com/video/81283726" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

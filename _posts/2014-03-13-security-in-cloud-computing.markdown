@@ -5,9 +5,10 @@ date:   2014-03-13 00:00:23 +0700
 categories: [security, cloud computing, SaaS, PasS, IaaS, DaaS]
 permalink: /security-in-cloud-computing/
 thumb : Cloud Computing is recently one of the biggest trends of computer techs that comes with some swanky terms. I strongly believe "Security for cloud-based data" will be the biggest concern in the near future.
+author : "Erkut Evirgen"
 ---
 <img src="/static/img/security.png">
-<br />
+<br /><br />
 <p style="text-align: justify;">As you know <strong>"Cloud Computing"</strong> is recently one of the biggest trends of computer techs. Together with Cloud Computing especially data storage costs of companies go down sharply and at the same time their computational strength is incredibly rising. After some search thru many sources about Cloud Computing you will come to get this summary on Cloud Computing: it is the presentation of information technology (software, application, data storage, security, service etc) which is geographically based in one place or scattered around, via local networks or internet to the users. (Someone else can read the same definitions as a the pompously made and beautifully wrapped marketing of client/server architection to users, i.e., GNU founder Richard Stallman "It's stupidity. It's worse than stupidity: it's a marketing hype campaign," told <a title="The Guardian" href="http://www.theguardian.com/technology/2008/sep/29/cloud.computing.richard.stallman" target="_blank">The Guardian</a>.)</p>
 <center><img src="http://erkutevirgen.com/wp-content/uploads/2014/03/dilbert_cloud_computing.jpg" /></center>
 <center><sub>It is customary to put a Dilbert cartoon to every technical blog post :) </sub></center>
