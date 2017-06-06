@@ -8,7 +8,7 @@ layout: default
 
   <ol class="posts">
     {% for post in paginator.posts %}
-    <br/><li><a href="{{ post.url }}">{{ post.title }}</a> &raquo; <i><span>{{ post.date | date_to_string }}</span></i></li>
+    <br/><li><b><i><a href="{{ post.url }}">{{ post.title }}</a> &raquo; </i></b><i><span>{{ post.date | date_to_string }}</span></i></li>
     <br/>{{ post.thumb }}
     <br/>&raquo; <a href="{{ post.url }}"> Click for more..</a>
     <br/>
