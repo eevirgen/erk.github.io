@@ -10,7 +10,7 @@ author : "Erkut Evirgen"
 <img src="/static/img/security.png">
 <br /><br />
 <p style="text-align: justify;">As you know <strong>"Cloud Computing"</strong> is recently one of the biggest trends of computer techs. Together with Cloud Computing especially data storage costs of companies go down sharply and at the same time their computational strength is incredibly rising. After some search thru many sources about Cloud Computing you will come to get this summary on Cloud Computing: it is the presentation of information technology (software, application, data storage, security, service etc) which is geographically based in one place or scattered around, via local networks or internet to the users. (Someone else can read the same definitions as a the pompously made and beautifully wrapped marketing of client/server architection to users, i.e., GNU founder Richard Stallman "It's stupidity. It's worse than stupidity: it's a marketing hype campaign," told <a title="The Guardian" href="http://www.theguardian.com/technology/2008/sep/29/cloud.computing.richard.stallman" target="_blank">The Guardian</a>.)</p>
-<center><img src="http://erkutevirgen.com/wp-content/uploads/2014/03/dilbert_cloud_computing.jpg" /></center>
+<center><img src="/static/img/dilbert_cloud_computing.jpg" /></center>
 <center><sub>It is customary to put a Dilbert cartoon to every technical blog post :) </sub></center>
 
 <p style="text-align: justify;"><br />Cloud Computing is trend and of course it comes with some swanky terms. There is one acronym, an umbrella term for all aspects of IT to be delivered 'as a service' : <em>XaaS (Everything as a Service)</em> Today, nearly any type of hardware, software, IT or business process can be offered as a cloud-based service.
