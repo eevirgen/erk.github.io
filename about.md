@@ -9,7 +9,7 @@ This is Erkut Evirgen. I am a Software Engineer & Consultant living in London wi
 
 Studied Computer Science and completed MSc degree in the field of Machine Learning movement. I have worked with a number of different companies since the beginning of 2000s including <a href="https://www.sony.co.uk/" target="_blank">Sony Europe</a>,
 <a href="https://www.turkcell.com/" target="_blank">Turkcell</a>, <a href="https://www.veripark.com/" target="_blank">Veripark</a>,
-<a href="https://www.obss.co/" target="_blank">OBSS</a> and my own company  <a href="http://www.wisen.tech/" target="_blank">Wisen.tech</a>.
+<a href="https://www.obss.co/" target="_blank">OBSS</a> and <a href="http://www.wisen.tech/" target="_blank">Wisen.tech</a>.
 
 I worked in various projects as developer, architect, consultant, senior manager and
 actively participated in all stages of software creation processes of highly concurrent - low latency web projects,
