@@ -2,7 +2,7 @@ title: Recent Posts
 description: Erkut Evirgen - Personal Blog
 author: Erkut Evirgen
 github: https://github.com/eevirgen
-about: .Computer Engineer <br/>. Founder of Wisen.tech <br/>.Rock'n Roll Nerd<br/>@London
+about: .Computer Engineer <br/>. Founder of <a href="http://wisen.tech" target="_blank">Wisen.tech</a> <br/>.Rock'n Roll Nerd<br/>@London
 disqus_shortname: erkSpace
 google_analytics: UA-19234700-1
 avatar_url: /static/img/avatar.jpg
@@ -16,8 +16,8 @@ collections:
     permalink: /project/:path/
 
 social:
-    - icon: fa-facebook
-      link: "https://www.facebook.com/erkut.evirgen"
+    - icon: fa-building
+      link: "https://wisen.tech"
     - icon: fa-twitter
       link: "https://twitter.com/eevirgen"
     - icon: fa-linkedin
