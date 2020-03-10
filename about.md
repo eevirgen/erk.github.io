@@ -7,7 +7,7 @@ Hello there!
 
 This is Erkut Evirgen. I am founder of  <a href="http://www.wisen.tech/" target="_blank">Wisen.tech</a> and Software Engineer & Principal Technology Consultant living in London with a strong affection for technology and art.
 
-Studied Computer Science and completed MSc degree in the field of Machine Learning movement. I have worked with a number of different companies since the beginning of 2000s including <a href="https://www.sony.co.uk/" target="_blank">Sony Europe</a>,
+Studied Computer Science and completed MSc degree in the field of Machine Learning. I have worked with a number of different companies since the beginning of 2000s including <a href="https://www.sony.co.uk/" target="_blank">Sony Europe</a>,
 <a href="https://www.turkcell.com/" target="_blank">Turkcell</a>, <a href="https://www.veripark.com/" target="_blank">Veripark</a>,
 <a href="https://www.obss.co/" target="_blank">OBSS</a>, <a href="https://www.visa.com/" target="_blank">VISA</a>, <a href="https://www.hsbc.co.uk/" target="_blank">HSBC</a> and <a href="http://www.wisen.tech/" target="_blank">Wisen</a>.
 
