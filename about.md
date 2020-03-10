@@ -20,7 +20,7 @@ But nowadays, interested in utilisation of the massive volumes of raw user event
 <a href='https://spark.apache.org/' target="_blank">Apache Spark</a>, Data Streaming, Big Data, Machine Learning.
 
 
-I am the drummer of<a href='https://www.minorroyals.com/' target="_blank">Minor Royals</a> which is a London-based five-piece band, writing and recording original music.
+I am the drummer of <a href='https://www.minorroyals.com/' target="_blank">Minor Royals</a> which is a London-based five-piece band, writing and recording original music.
 Our music is available on <a href='https://open.spotify.com/artist/2Zp22W2Qoa1ulHsp5QoGtg' target="_blank">Spotify</a>, <a href='https://music.apple.com/gb/artist/minor-royals/1498464032' target="_blank">Apple Music</a> and <a href='https://minorroyals.bandcamp.com/releases' target="_blank">Bandcamp</a> amongst other streaming services globally.
 
 As a side project, I am working on my musical background and composing my own solo songs.
