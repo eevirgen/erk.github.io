@@ -113,7 +113,6 @@ layout: compress
   </head>
   <body>
     <div class="container">
-      <div align="right" class="sidebar-nav profile-about"><br/><b><i><a style="font-size:22px" href="/">Home</a></i></b><b> &nbsp;-&nbsp; <i><a style="font-size:22px" href="/about">About Me</a></i></b></div>
       <div class="row gx-0">
         <div class="col-md-3 sidebar">
           <div class="fixed-condition">
@@ -127,7 +126,7 @@ layout: compress
             <div class="social">
               <ul>
                 {% for link in site.social %}
-                <li><a href="{{ link.link }}" target="_blank"><i class="fa {{ link.icon }}"></i></a></li>
+                <li><a href="{{ link.link }}" target="_blank"><i class="fa {{ link.icon }} fa-lg"></i></a></li>
                 {% endfor %}
               </ul>
             </div>
