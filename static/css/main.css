@@ -85,23 +85,23 @@ footer {
 }
 
 /* Left column */
-div.col-sm-3 {
+div.sidebar {
   margin-top: 55px;
   font-size: 12px;
   color: #666;
 }
-div.col-sm-3 strong {
+div.sidebar strong {
   font-size: 16px;
   color: #000000;
   font-weight: normal;
 }
-div.col-sm-3 div.profile-about {
+div.sidebar div.profile-about {
   margin-top: 10px;
   color: #000000;
   font-weight: bold;
   font-style: oblique;
 }
-div.col-sm-3 img.profile-avatar {
+div.sidebar img.profile-avatar {
   border-radius: 150px;
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
@@ -171,7 +171,7 @@ div.col-sm-3 img.profile-avatar {
   }
 }
 @media (max-width: 768px) {
-  div.col-md-3 {
+  div.sidebar {
     margin-top: 30px;
   }
 }
