@@ -2,7 +2,7 @@ title: Recent Posts
 description: Erkut Evirgen - Personal Blog
 author: Erkut Evirgen
 github: https://github.com/eevirgen
-about: Software Engineer & Consultant living in London. Founder of <a href="http://wisen.tech" target="_blank">Wisen</a>. Rock'n Roll Nerd.
+about: . Software Engineer & Consultant<br/>  . Architecture Design and Development<br/> . Team Build and  Management<br/> . Founder of <a href="http://wisen.tech" target="_blank">Wisen</a> <br/> . Rock'n Roll Nerd <br/> @London, UK
 disqus_shortname: erkSpace
 google_analytics: UA-19234700-1
 avatar_url: /static/img/avatar.jpg
@@ -34,8 +34,6 @@ share:
 urls:
     - text: About Me
       url: /about/
-    - text: I am on Twitter
-      url: /twitter/
 
 url: "https://erkut.me"
 baseurl: ""
