@@ -113,7 +113,7 @@ layout: compress
   </head>
   <body>
     <div class="container">
-      <div class="row">
+      <div class="row gx-0">
         <div class="col-md-3 sidebar">
           <div class="fixed-condition">
             <a href="/"><img class="profile-avatar" src="{{ site.avatar_url }}" height="200px" width="210px" /></a>
@@ -145,15 +145,18 @@ layout: compress
           </div>
           <!-- end /.fixed-condition -->
         </div>
-        <div class="col-md-8 offset-md-1 main-layout">
-          {{ content }}
-          <footer>
-            &copy; {{ site.author }}
-            {% if site.github %}
-            - <a href="{{ site.github }}">{{ site.github }}</a> - Powered by Jekyll.
-            {% endif %}
+        <div class="col-md-9">
+          <div class="main-layout">
 
-          </footer>
+            {{ content }}
+            <footer>
+              &copy; {{ site.author }}
+              {% if site.github %}
+              - <a href="{{ site.github }}">{{ site.github }}</a> - Powered by Jekyll.
+              {% endif %}
+
+            </footer>
+          </div>
         </div>
         <!-- end /.col-sm-8 -->
       </div>
