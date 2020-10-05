@@ -113,48 +113,52 @@ layout: compress
   </head>
   <body>
     <div class="container">
-      <div class="col-md-3">
-        <div class="fixed-condition">
-          <a href="/"><img class="profile-avatar" src="{{ site.avatar_url }}" height="200px" width="210px" /></a>
-          <h1 class="author-name">{{ site.author }}</h1>
-          {% if site.about %}
+      <div class="row">
+        <div class="col-md-3">
+          <div class="fixed-condition">
+            <a href="/"><img class="profile-avatar" src="{{ site.avatar_url }}" height="200px" width="210px" /></a>
+            <h1 class="author-name">{{ site.author }}</h1>
+            {% if site.about %}
             <div class="profile-about">
               {{ site.about }}
             </div>
-          {% endif %}
-          <div class="social">
-            <ul>
-              {% for link in site.social %}
+            {% endif %}
+            <div class="social">
+              <ul>
+                {% for link in site.social %}
                 <li><a href="{{ link.link }}" target="_blank"><i class="fa {{ link.icon }}"></i></a></li>
+                {% endfor %}
+              </ul>
+            </div>
+            <div class="search" id="js-search">
+              <input type="text" placeholder="type to search" class="search__input form-control" id="js-search__input">
+              <ul class="search__results" id="js-search__results"></ul>
+            </div>
+            <hr />
+            <ul class="sidebar-nav">
+              <strong>Navigation</strong>
+              <li><b><i><a class="about" style="font-size:13px" href="/">Home</a></i></b></li>
+              {% for i in site.urls %}
+              <li><b><i><a class="about" style="font-size:13px" href="{{ i.url }}">{{ i.text }}</a></i></b></li>
               {% endfor %}
             </ul>
           </div>
-          <div class="search" id="js-search">
-            <input type="text" placeholder="type to search" class="search__input form-control" id="js-search__input">
-            <ul class="search__results" id="js-search__results"></ul>
-          </div>
-          <hr />
-          <ul class="sidebar-nav">
-            <strong>Navigation</strong>
-            <li><b><i><a class="about" style="font-size:13px" href="/">Home</a></i></b></li>
-            {% for i in site.urls %}
-              <li><b><i><a class="about" style="font-size:13px" href="{{ i.url }}">{{ i.text }}</a></i></b></li>
-            {% endfor %}
-          </ul>
+          <!-- end /.fixed-condition -->
         </div>
-        <!-- end /.fixed-condition -->
-      </div>
-      <div class="col-md-8 offset-md-1 main-layout">
-        {{ content }}
-        <footer>
-          &copy; {{ site.author }}
-          {% if site.github %}
+        <div class="col-md-8 offset-md-1 main-layout">
+          {{ content }}
+          <footer>
+            &copy; {{ site.author }}
+            {% if site.github %}
             - <a href="{{ site.github }}">{{ site.github }}</a> - Powered by Jekyll.
-          {% endif %}
+            {% endif %}
 
-        </footer>
+          </footer>
+        </div>
+        <!-- end /.col-sm-8 -->
       </div>
-      <!-- end /.col-sm-8 -->
+
+
     </div>
     <!-- end /.container -->
 
