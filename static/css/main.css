@@ -102,6 +102,7 @@ div.sidebar div.profile-about {
   color: #000000;
   font-weight: bold;
   font-style: oblique;
+  text-align: left;
 }
 div.sidebar img.profile-avatar {
   border-radius: 150px;
