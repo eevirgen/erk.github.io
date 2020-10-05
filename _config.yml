@@ -37,7 +37,7 @@ urls:
     - text: I am on Twitter
       url: /twitter/
 
-url: "http://erkut.me"
+url: "https://erkut.me"
 baseurl: ""
 paginate: 5
 per_page: 5
