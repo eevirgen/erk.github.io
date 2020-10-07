@@ -8,11 +8,11 @@ thumb : I needed to find out whether forecast reports had affected Istanbul stoc
 author : "Erkut Evirgen"
 
 ---
-<img src="/static/img/storm.jpg" heigth="200px" width="1000px">
+<img src="/static/img/storm.jpg" heigth="200px" width="1000px"/>
 <br /><br />
 I needed to find out whether forecast reports had affected Istanbul stock market's closing prices. I just wanted to try what can be done with <a href="http://en.wikipedia.org/wiki/Time_series" target="_blank">time series</a> analysis methods and <a href="http://www.cs.waikato.ac.nz/ml/weka/" target="_blank">WEKA</a> and display it then prepare a report accordingly. <br />I downloaded last 1 year Istanbul weather data from <a href="http://www.wunderground.com/" target="_blank">http://www.wunderground.com/</a> and I got Istanbul last year's BIST index close values from my lovely friend <a href="http://kahramani.tumblr.com" target="blank_">Ibrahim Kahraman</a>. He is a master of these financial stuff.
 
-**_Introduction_**
+**Introduction**
 
 A time series can be defined as a sequence of measurements taken at (usually equally spaced) ordered point in time. Recently, Machine Learning (ML) techniques have been applied to time series data for prediction of next points in time (forecasting), and the results show great improvement over classical techniques (e.g. ARIMA). Ahmed et al. applied several ML algorithms to the problem of time series forecasting and they suggest Multilayer Perceptron and Gaussian Process regression as the best methods <em>(Ahmed et al. 2010).</em>
 <br /><br />Often, preprocessing the time series data is needed to remove samples with missing values, add new attributes based on lag mechanism and merge time series from different sources. To allow propositional learning algorithms (e.g. Artificial Neural Networks) to capture the relationship between current and past values of the exploratory variables and the outcome, new variables should be created. The lag variables create a “window” over a time period and they may take a finite number of lagged values into account (Finite Distributed Lag model, or FDL) or they may use an infinite distributed lag (e.g. all past values) <em>(Cromwell 1994)</em>.

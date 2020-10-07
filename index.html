@@ -4,13 +4,10 @@ layout: default
 
 <div id="home">
   <h1>{{ site.title }}</h1>
-  <hr />
-
   <ol class="posts">
     {% for post in paginator.posts %}
     <br/><li><b><i><a href="{{ post.url }}">{{ post.title }}</a> &raquo; </i></b><i><span>{{ post.date | date_to_string }}</span></i></li>
-    <br/>{{ post.thumb }}
-    <br/>&raquo; <a href="{{ post.url }}"> Click for more..</a>
+    <br/>{{ post.thumb }}<br/>&raquo;<a href="{{ post.url }}"> Click to keep reading...</a>
     <br/>
     {% endfor %}
   </ol>

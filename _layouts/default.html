@@ -115,7 +115,7 @@ layout: compress
       <div class="row gx-0">
         <div class="col-md-3 sidebar">
           <div class="fixed-condition">
-            <a href="/"><img class="profile-avatar" src="{{ site.avatar_url }}" height="250px" width="250px" /></a>
+            <a href="/"><img class="profile-avatar" src="{{ site.avatar_url }}" height="240px" width="240px" /></a>
             <h1 class="author-name">{{ site.author }}</h1>
             {% if site.about %}
             <div class="profile-about">
@@ -135,10 +135,10 @@ layout: compress
             </div>
             <ul class="sidebar-nav">
               <strong>Navigation</strong>
-              <li><b><i><a class="about" style="font-size:15px" href="/">Home</a></i></b></li>
               {% for i in site.urls %}
               <li><b><i><a class="about" style="font-size:15px" href="{{ i.url }}">{{ i.text }}</a></i></b></li>
               {% endfor %}
+              <li><b><i><a class="about" style="font-size:15px" href="/">Posts</a></i></b></li>
             </ul>
           </div>
           <!-- end /.fixed-condition -->

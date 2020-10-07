@@ -1,8 +1,8 @@
 title: Recent Posts
-description: Erkut Evirgen - Personal Blog
+description: Erkut Evirgen - Software Engineer & Technology Consultant
 author: Erkut Evirgen
 github: https://github.com/eevirgen
-about: . Software Engineer & Consultant @London
+about: Software Engineer & Technology Consultant @London, UK
 disqus_shortname: erkSpace
 google_analytics: UA-19234700-1
 avatar_url: /static/img/avatar_erk.jpg
@@ -26,6 +26,8 @@ social:
       link: "http://instagram.com/eevirgen"
     - icon: fa-github
       link: "https://github.com/eevirgen"
+    - icon: fa-envelope
+      link: "mailto:erkut@erkut.me"
 
 share:
   twitter_username: eevirgen
@@ -34,6 +36,8 @@ share:
 urls:
     - text: About Me
       url: /about/
+    - text: Work Portfolio
+      url: /work/
 
 url: "https://erkut.me"
 baseurl: ""
