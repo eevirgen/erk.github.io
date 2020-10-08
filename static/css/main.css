@@ -194,3 +194,32 @@ div.sidebar img.profile-avatar {
   font-size: 20px;
   padding-bottom: 2px;
 }
+
+.grid .brand {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0 4rem;
+  margin-bottom: 1rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+figure {
+  margin: 0 0 0rem;
+  filter: grayscale(80%);
+}
+
+.grid .brand figure img {
+  width: auto;
+  height: 1rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.erkAboutCountry {
+  color: gray;
+  font-size: 13px;
+}
