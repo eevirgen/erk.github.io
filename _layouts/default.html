@@ -43,8 +43,8 @@ layout: compress
       <meta content="{{ site.url }}/about/" property="article:author">
     {% endif %}
 
-    {% if page.image %}
-      <meta content="{{ site.url }}/static/img/posts/{{ page.image }}" property="og:image">
+    {% if page.mediaListImage %}
+      <meta content="{{ site.url }}{{ page.mediaListImage }}" property="og:image">
     {% else %}
       <meta content="{{ site.url }}{{ site.avatar_url }}" property="og:image">
     {% endif %}
