@@ -1,0 +1,20 @@
+---
+layout: journal
+title: Journal
+permalink: /journal/
+---
+
+{% for post in paginator.posts %}
+<div class="item col-lg-6 col-xl-4">
+  <article class="post">
+    <figure><a href="{{ post.url }}"><img src="{{ post.mediaListImage }}" alt="" /></a></figure>
+    <div class="post-header">
+      <ul class="post-meta">
+        <li class="post-date">{{ post.date | date_to_string }}</li>
+      </ul>
+      <h2 class="post-title h5"><a href="{{ post.url }}" class="hover">{{ post.title }}</a></h2>
+    </div>
+    <p>{{ post.thumb }}...</p>
+  </article>
+</div>
+{% endfor %}

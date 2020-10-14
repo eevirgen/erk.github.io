@@ -1,49 +1,60 @@
 ---
-layout: default
+layout: page
+title: Articles by category
 ---
-<header class="post-header">
-  <h1 class="post-title">Articles by category: {{ page.categories }}</h1>
-</header>
 
-<div class="post-content">
-  <hr />
-  {% for category in site.categories %}
-    {% capture category_slug %}{{ category | first }}{% endcapture %}
-    {% for c_slug in category_slug %}
-      {% if c_slug == page.categories %}
-        <button class="btn btn-sm btn-default active">{{ c_slug }}</button>
-      {% else %}
-        <a href="/category/{{ c_slug }}" class="btn btn-sm btn-default">{{ c_slug }}</a>
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
-
-  <hr />
-  {% if site.categories[page.categories] %}
-    {% for post in site.categories[page.categories] %}
-      {% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
-      {% if forloop.first %}
-          <h4>{{ post_year }}</h4>
-          <div class="list-group">
-      {% endif %}
-
-      {% if forloop.first == false %}
-        {% assign previous_index = forloop.index0 | minus: 1 %}
-        {% capture previous_post_year %}{{ site.categories[page.categories][previous_index].date | date: '%Y' }}{% endcapture %}
-        {% if post_year != previous_post_year %}
-          </div>
-          <h4>{{ post_year }}</h4>
-          <div class="list-group">
-        {% endif %}
-      {% endif %}
-        <ul class="posts">
-          <li><a href="{{ post.url }}">{{ post.title }}</a> &raquo; <i><span>{{ post.date | date_to_string }}</span></i></li>
-        </ul>
-      {% if forloop.last %}
+<div class="card-body">
+    <article class="post">
+        <div class="post-header">
+            <ul class="post-meta">
+                <li class="post-tags">
+                    <div class="post-header">
+                        <ul class="post-meta">
+                            {% for category in site.categories %}
+                            {% capture category_slug %}{{ category | first }}{% endcapture %}
+                            {% for c_slug in category_slug %}
+                            {% if c_slug == page.categories %}
+                            <span>{{ c_slug }}</span>
+                            {% else %}
+                            <span> <a href="/category/{{ c_slug }}">{{ c_slug }}</a></span>
+                            {% endif %}
+                            {% endfor %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+            </ul>
+            <!-- /.post-meta -->
         </div>
-      {% endif %}
-    {% endfor %}
-  {% else %}
-    <p>There are no posts in this categories.</p>
-  {% endif %}
-</div>
+        <!-- /.post-header -->
+        <div class="space10"></div>
+        <hr/>
+        {% if site.categories[page.categories] %}
+        {% for post in site.categories[page.categories] %}
+        {% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
+        {% if forloop.first %}
+        <h4>{{ post_year }}</h4>
+        <div class="list-group">
+            {% endif %}
+
+            {% if forloop.first == false %}
+            {% assign previous_index = forloop.index0 | minus: 1 %}
+            {% capture previous_post_year %}{{ site.categories[page.categories][previous_index].date | date: '%Y' }}{% endcapture %}
+            {% if post_year != previous_post_year %}
+        </div>
+        <h4>{{ post_year }}</h4>
+        <div class="list-group">
+            {% endif %}
+            {% endif %}
+            <ul class="posts">
+                <li><a href="{{ post.url }}">{{ post.title }}</a> &raquo; <i><span>{{ post.date | date_to_string }}</span></i></li>
+            </ul>
+            {% if forloop.last %}
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% else %}
+        <p>There are no posts in this categories.</p>
+        {% endif %}
+    </article>
+    <!-- /article -->
+</div>cd

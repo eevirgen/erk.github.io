@@ -1,4 +1,4 @@
-title: Recent Posts
+title: Erkut Evirgen
 description: Erkut Evirgen - Software Engineer & Technology Consultant
 author: Erkut Evirgen
 github: https://github.com/eevirgen
@@ -34,16 +34,18 @@ share:
   fb_appid: 217469665438549
 
 urls:
-    - text: About Me
-      url: /about/
-    - text: Work Portfolio
+    - text: About
+      url: /
+    - text: Work
       url: /work/
+    - text: Journal
+      url: /journal/
 
 url: "https://erkut.me"
 baseurl: ""
-paginate: 5
-per_page: 5
-paginate_path: "/page/:num/"
+paginate: 6
+per_page: 6
+paginate_path: "/journal/page/:num/"
 markdown: kramdown
 gems:
   - jekyll-paginate

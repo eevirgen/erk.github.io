@@ -2,13 +2,13 @@
 layout: compress
 ---
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/style/images/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/static/img/favicon.ico" />
-    <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.author }}{% endif %}</title>
+    <title>{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.author }}{% endif %}</title>
     <meta name="author" content="{{ site.author }}" />
     <meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}" />
     <meta name="keywords" content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}" />
@@ -85,19 +85,11 @@ layout: compress
       <meta name="twitter:image:src" content="{{ site.url }}/{{ page.header-img }}">
     {% endif %}
 
-    <!-- Font awesome icons -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-    <!-- syntax highlighting CSS -->
-    <link rel="stylesheet" href="/static/css/syntax.css">
-    <!-- Bootstrap core CSS -->
-    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/static/css/super-search.css">
-    <link rel="stylesheet" href="/static/css/thickbox.css">
-    <link rel="stylesheet" href="/static/css/projects.css">
-    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/style/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/style/css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="/style/type/type.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700" rel="stylesheet">
 
     <!-- Google Analytics -->
     <script>
@@ -111,64 +103,77 @@ layout: compress
     </script>
   </head>
   <body>
-    <div class="container">
-      <div class="row gx-0">
-        <div class="col-md-3 sidebar">
-          <div class="fixed-condition">
-            <a href="/"><img class="profile-avatar" src="{{ site.avatar_url }}" height="240px" width="240px" /></a>
-            <h1 class="author-name">{{ site.author }}</h1>
-            {% if site.about %}
-            <div class="profile-about">
-              {{ site.about }}
-            </div>
-            {% endif %}
-            <div class="social">
-              <ul>
-                {% for link in site.social %}
-                <li><a href="{{ link.link }}" target="_blank"><i class="fa {{ link.icon }} fa-lg"></i></a></li>
-                {% endfor %}
+  <div class="container inner">
+    <div class="row gx-md-50">
+      <header class="col-lg-2 mb-30 mb-lg-0">
+        <div class="row gx-0 gy-20 gy-lg-0">
+          <div class="col-6 col-lg-12 order-0 order-lg-1">
+            <h1 class="site-title h3">Erkut Evirgen</h1>
+            <p class="small text-muted mb-0">Software Engineer & <br class="d-lg-none">Technology Consultant  <br class="d-lg-none">@London, UK</p>
+          </div>
+          <!-- /column -->
+          <div class="col-6 col-lg-12 profile order-2 order-lg-0">
+            <figure class="ml-auto"><a href="/"><img src="/style/images/avatar_erk.jpg" alt=""></a></figure>
+          </div>
+          <div class="col-12 col-lg-12 order-3 order-lg-3 mt-n10 mt-lg-0">
+              <ul class="social social-mute">
+                  <li><a href="https://wisen.tech/" target="_blank"><i class="uil uil-briefcase"></i></a></li>
+                  <li><a href="https://twitter.com/eevirgen" target="_blank"><i class="uil uil-linkedin"></i></a></li>
+                  <li><a href="https://uk.linkedin.com/in/erkutevirgen" target="_blank"><i class="uil uil-twitter"></i></a></li>
+                  <li><a href="http://instagram.com/eevirgen" target="_blank"><i class="uil uil-instagram"></i></a></li>
+                  <li><a href="https://github.com/eevirgen" target="_blank"><i class="uil uil-github"></i></a></li>
               </ul>
-            </div>
-            <div class="search" id="js-search">
-              <input type="text" placeholder="type to search" class="search__input form-control" id="js-search__input">
+          </div>
+          <div class="col-12 order-3 order-lg-2">
+            <nav>
+              <ul class="nav">
+                <li class="nav-item {% if page.title == 'About' %}active{% endif %}">
+                  <a class="nav-link" href="/">About {{ page.active }}</a>
+                </li>
+                <li class="nav-item {% if page.title == 'Work' %}active{% endif %}">
+                  <a class="nav-link" href="/work/">Work</a>
+                </li>
+                <li class="nav-item {% if page.title == 'Journal' %}active{% endif %}">
+                  <a class="nav-link" href="/journal/">Journal</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="mailto:erkut@erkut.me">E-Mail</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <p>
+          <div id="js-search">
+              <input id="js-search__input" type="text" class="form-control" placeholder="Type to Search">
               <ul class="search__results" id="js-search__results"></ul>
-            </div>
-            <ul class="sidebar-nav">
-              <strong>Navigation</strong>
-              {% for i in site.urls %}
-              <li><b><i><a class="about" style="font-size:15px" href="{{ i.url }}">{{ i.text }}</a></i></b></li>
-              {% endfor %}
-              <li><b><i><a class="about" style="font-size:15px" href="/">Posts</a></i></b></li>
-            </ul>
           </div>
-          <!-- end /.fixed-condition -->
-        </div>
-        <div class="col-md-9">
-          <div class="main-layout">
+         </p>
+      </header>
+      <!-- /header -->
+      <main class="col-lg-10">
+        <div class="card">
             {{ content }}
-            <footer>
-              &copy; {{ site.author }}
-              {% if site.github %}
-              - <a target="_blank" href="{{ site.github }}">{{ site.github }}</a> - Powered by Jekyll.
-              {% endif %}
-
-            </footer>
-          </div>
         </div>
-        <!-- end /.col-sm-8 -->
-      </div>
-
-
+        <!-- /.card -->
+      </main>
+      <!-- /main -->
     </div>
-    <!-- end /.container -->
-
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
-    <script src="/static/js/super-search.js"></script>
-    <script src="/static/js/thickbox-compressed.js"></script>
-    <script src="/static/js/projects.js"></script>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+  <script src="/style/js/bootstrap.bundle.min.js"></script>
+  <script src="/style/js/jquery.min.js"></script>
+  <script src="/style/js/plugins.js"></script>
+  <script src="/style/js/scripts.js"></script>
+  <script src="/style/js/super-search.js"></script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId={{ site.share.fb_appid }}";
+      fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
   </body>
 </html>
