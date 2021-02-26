@@ -21,7 +21,7 @@ An engineer who has no knowledge of TCP/IP literally writes a back-end service t
 
 Years ago, I recall that when using Kylix in an ERP development team for a textile factory, I wrote an updater to get the final version of the executable file for the client from the internal network each time the application is started. It was so unusual and exceptional that even an engineer himself was online all the time. The offline use of software and offline individuals are extra-ordinary and exceptional today.
 
-Develop a new programming language was a very idealist and a romantic process. Knowledge of execution paradigms, writing a compiler or interpreter. The people who did this were the Don Quixote's of the academic world and they the people of distinction. However, now, this situation can sometimes even be a weekend hobby of a young developer. There are dozens of new programming languages coming to the market every year, and some have set themselves up to learn a new programming language every year.
+Develop a new programming language was a very idealist and a romantic process. Knowledge of execution paradigms, writing a compiler or interpreter. The people who did this were the heroes of the academic world and they the people of distinction. However, now, this situation can sometimes even be a weekend hobby of a young developer. There are dozens of new programming languages coming to the market every year, and some have set themselves up to learn a new programming language every year.
 
 **Things are changing constantly. Often unpredictable.**
 
