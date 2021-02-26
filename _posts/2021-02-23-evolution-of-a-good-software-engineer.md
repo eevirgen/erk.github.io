@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A Software Engineer Anatomy: Specialist of Generalism"
+title:  "Anatomy of a Software Engineer: Specialist of Generalism"
 date:   2021-02-26 10:00:10 +0000
 categories: [engineering, software, software engineering]
 permalink: /a-software-engineer-anatomy/
