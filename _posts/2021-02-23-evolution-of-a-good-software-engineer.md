@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Anatomy of a Software Engineer: Specialist of Generalism"
-date:   2021-02-26 10:00:10 +0000
+date:   2021-03-01 23:00:10 +0000
 categories: [engineering, software, software engineering]
 permalink: /a-software-engineer-anatomy/
 thumb : I needed to find out whether forecast reports had affected Istanbul stock market's closing prices. I just wanted to try what can be done with time series analysis methods..
