@@ -32,7 +32,7 @@ In order to remain valuable in the industry for a long time, without compromisin
 The paradigms are evolving so rapidly. Improving your ability to recognise what one needs to be specialised in is important. For example, recognising that knowledge of distributed VCS systems is now a must, and being competent and adequate about it, but determining if Git is the instrument that is supposed to be chosen “today”. 
 I put “Time Optimisation” at the beginning of the list, because distinguishing important from unimportant and deciding how to spend your time are the most significant skills in the industry today. It’s a remarkable subject to be able to operate the [Pareto Principle](https://en.wikipedia.org/wiki/Pareto_principle){:target="_blank"} effectively.
 
-##### Go for root cause and behind the scenes
+##### Behind the scenes
 
 It is also a challenge to go to the root cause and behind the scenes to grasp languages, libraries and paradigms. You have to understand evolution and the history. For instance: Why does React.js have such popularity? To understand this, the individual must first understand the nature of the Backbone and component structure, how DOM works, and how DOM manipulation makes sense and why it is so common. The chronological cause and effect relationship helps to better understand the technology in question, as well as to understand whether to spend time in that technology or not. So, it is not important to use them, what is really important is to know what they are good for.
 
