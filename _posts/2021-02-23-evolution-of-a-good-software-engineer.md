@@ -38,7 +38,7 @@ It is also a challenge to go to the root cause and behind the scenes to grasp la
 
 ##### Deep Focus
 
-It takes deep work and focus to be able to see a complicated system or a story in terms of simple parts or to make them simple. As technology progresses, anyone who does not develop this skill will probably be left behind. Staying in deep focus amongst distractions like mobile notifications, funny youtube videos and whatsapp messages, will be the one of the most distinguishing soft skills in the years to come.
+It takes deep work and focus to be able to see a complicated system or a story in terms of simple parts or to make them simple. As technology progresses, anyone who does not develop this skill will probably be left behind. Staying in deep focus amongst distractions like mobile notifications, funny YouTube videos and WhatsApp messages, will be the one of the most distinguishing soft skills in the years to come.
 
 ##### Soft Skills
 
