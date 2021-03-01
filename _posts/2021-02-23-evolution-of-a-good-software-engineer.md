@@ -34,7 +34,7 @@ I put “Time Optimisation” at the beginning of the list, because distinguishi
 
 ##### Behind the scenes
 
-It is also a challenge to go to the root cause and behind the scenes to grasp languages, libraries and paradigms. You have to understand evolution and the history. For instance: Why does React.js have such popularity? To understand this, the individual must first understand the nature of the Backbone and component structure, how DOM works, and how DOM manipulation makes sense and why it is so common. The chronological cause and effect relationship helps to better understand the technology in question, as well as to understand whether to spend time in that technology or not. So, it is not important to use them, what is really important is to know what they are good for.
+It is also a challenge to go to the root cause and behind the scenes to grasp languages, libraries and paradigms. You have to understand evolution and the history. For instance: Why does React.js have such popularity? To understand this, the individual must first understand the history and evolution of Javascript, how DOM works, and how DOM manipulation makes sense and why it is so common. The chronological cause and effect relationship helps to better understand the technology in question, as well as to understand whether to spend time in that technology or not. So, it is not important to use them, what is really important is to know what they are good for.
 
 ##### Deep Focus
 
