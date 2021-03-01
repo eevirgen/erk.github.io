@@ -3,7 +3,7 @@ layout: post
 title:  "Anatomy of a Software Engineer: Specialist of Generalism"
 date:   2021-02-26 16:00:10 +0000
 categories: [engineering, software engineering]
-permalink: /a-software-engineer-anatomy/
+permalink: /anatomy-of-a-software-engineer/
 thumb : It has been about 5500 years since the wheel, one of the most genuine engineering wonders, was invented. The paper is about 2200 years old. The electricity is about 140, transistors ..
 author : "Erkut Evirgen"
 mediaType : image
