@@ -31,7 +31,7 @@ In order to remain valuable in the industry for a long time, without compromisin
 
 ____
 
-##### Time Optimization
+##### Time Optimisation
 
 The paradigms are evolving so rapidly. Improving your ability to recognise what one needs to be specialised in is important. For example, recognising that knowledge of distributed VCS systems is now a must, and being competent and adequate about it, but determining if Git is the instrument that is supposed to be chosen “today”.
 I put “Time Optimisation” at the beginning of the list, because distinguishing important from unimportant and deciding how to spend your time are the most significant skills in the industry today. It’s a remarkable subject to be able to operate the [Pareto Principle](https://en.wikipedia.org/wiki/Pareto_principle){:target="_blank"} effectively.
