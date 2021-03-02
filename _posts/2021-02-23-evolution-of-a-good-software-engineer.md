@@ -25,16 +25,16 @@ Each computer engineer has his/her own reason to choose this career. Some have m
 
 Nevertheless, if you have taken steps in this engineering discipline in some way, and you want to make yourself someone people always want to cooperate with, you have to be aware that it is critical to react quickly to uncertainty. And I strongly believe that you have to feel the pressure first in order to succeed.
 
-In order to remain valuable in the industry for a long time, without compromising, it is important to aim at grasping certain engineering concepts. Here are some highlights from these engineering notions which can make you important today:
+In order to remain valuable in the industry for a long time, without compromising, it is important to aim at grasping certain engineering concepts. Here are some highlights that changed and not changed from these engineering notions which can make you important today:
+
+#### Things that changed
+
+____
 
 ##### Time Optimization
 
-The paradigms are evolving so rapidly. Improving your ability to recognise what one needs to be specialised in is important. For example, recognising that knowledge of distributed VCS systems is now a must, and being competent and adequate about it, but determining if Git is the instrument that is supposed to be chosen “today”. 
+The paradigms are evolving so rapidly. Improving your ability to recognise what one needs to be specialised in is important. For example, recognising that knowledge of distributed VCS systems is now a must, and being competent and adequate about it, but determining if Git is the instrument that is supposed to be chosen “today”.
 I put “Time Optimisation” at the beginning of the list, because distinguishing important from unimportant and deciding how to spend your time are the most significant skills in the industry today. It’s a remarkable subject to be able to operate the [Pareto Principle](https://en.wikipedia.org/wiki/Pareto_principle){:target="_blank"} effectively.
-
-##### Behind the scenes
-
-It is also a challenge to go to the root cause and behind the scenes to grasp languages, libraries and paradigms. You have to understand evolution and the history. For instance: Why does React.js have such popularity? To understand this, the individual must first understand the history and evolution of Javascript, how DOM works, and how DOM manipulation makes sense and why it is so common. The chronological cause and effect relationship helps to better understand the technology in question, as well as to understand whether to spend time in that technology or not. So, it is not important to use them, what is really important is to know what they are good for.
 
 ##### Deep Focus
 
@@ -47,6 +47,10 @@ Although experience is even more relevant at times when access to information wa
 ##### Knowledge of upcoming technologies
 
 I’m talking about the people who try and put aside new technology/libraries/tools and move on. Trying [Alpha Preview/CTP/Beta](https://stackoverflow.com/a/736475){:target="_blank"} and the latest technologies you see coming up, libraries, tools, devices and reading some articles/manuals makes you much more efficient, desirable, searched and valuable now compared to the old days.
+
+#### Things that didn't changed
+
+____
 
 ##### Continuous and Fast Learning
 
@@ -64,6 +68,10 @@ In every software engineer’s reading list, these books should also be included
 [Algorithm Design Manual](https://www.amazon.co.uk/Algorithm-Design-Manual-Computer-Science/dp/3030542556){:target="_blank"},
 [Programming Pearls](https://www.amazon.co.uk/Programming-Pearls-Joe-Bentley/dp/8177588583){:target="_blank"},
 [Structure and Interpretation of Computer Programs](https://www.amazon.co.uk/Structure-Interpretation-Computer-Electrical-Engineering/dp/0262510871/){:target="_blank"}
+
+##### Behind the scenes
+
+It is also a challenge to go to the root cause and behind the scenes to grasp languages, libraries and paradigms. You have to understand evolution and the history. For instance: Why does React.js have such popularity? To understand this, the individual must first understand the history and evolution of Javascript, how DOM works, and how DOM manipulation makes sense and why it is so common. The chronological cause and effect relationship helps to better understand the technology in question, as well as to understand whether to spend time in that technology or not. **So, it is not important to use them, what is really important is to know what they are good for.**
 
 ##### Fundamental Principles and Context
 
