@@ -44,7 +44,7 @@ It takes deep work and focus to be able to see a complicated system or a story i
 
 Although experience is even more relevant at times when access to information was difficult, now, at t=0, an engineer can reach any technological or architectural information easily. Just because some developers have stored this historical information (or a boutique knowledge) in a custom knowledge hierarchy, companies do not have to bear their bad personalities. Software engineers with zero social skills are going extinct. Engineers, who are cocky and whose communication skills are not developed, are not preferred by companies regardless of their technical level.
 
-##### Knowledge of upcoming technologies (Try and throw away)
+##### Knowledge of upcoming technologies
 
 I’m talking about the people who try and put aside new technology/libraries/tools and move on. Trying [Alpha Preview/CTP/Beta](https://stackoverflow.com/a/736475){:target="_blank"} and the latest technologies you see coming up, libraries, tools, devices and reading some articles/manuals makes you much more efficient, desirable, searched and valuable now compared to the old days.
 
@@ -67,7 +67,7 @@ In every software engineer’s reading list, these books should also be included
 
 ##### Fundamental Principles and Context
 
-It is critical to internalise the concepts of SOLID, Design Patterns and more. One has to be aware of basic data structures and space and time trade-offs. It is not only important to know the distinction between Arrays and LinkedList, but to explain the implementation of hash tables and handle collisions. One needs to be familiar with the entire programming stack, hardware (CPU + memory + cache + interrupts + microcode), binary code, compiler, interpretation, garbage collection, problems such as heap stack, memory addressing, multi-threading, concepts of synchronisation. It also seems that knowledge of the network protocols, automated/functional/load and UI tests will remain critical and necessary to be a successful and wanted engineer for a long time in the industry.
+It is critical to internalise the concepts of [SOLID](https://en.wikipedia.org/wiki/SOLID){:target="_blank"}, [Design Patterns](https://en.wikipedia.org/wiki/Software_design_pattern){:target="_blank"}, General Principles(KISS, DRY, GP), Modularization Principles (Model Principle, Information Expert) and more and more. One has to be aware of basic data structures and space and time trade-offs. It is not only important to know the distinction between Arrays and LinkedList, but to explain the implementation of hash tables and handle collisions. One needs to be familiar with the entire programming stack, hardware (CPU + memory + cache + interrupts + microcode), binary code, compiler, interpretation, garbage collection, problems such as heap stack, memory addressing, multi-threading, concepts of synchronisation. It also seems that knowledge of the network protocols, automated/functional/load and UI tests will remain critical and necessary to be a successful and wanted engineer for a long time in the industry.
 
 ##### Failure
 
