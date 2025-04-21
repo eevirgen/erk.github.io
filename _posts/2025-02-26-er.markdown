@@ -7,8 +7,8 @@ permalink: /sil/
 thumb : test ..
 author : "Jacob Silverman"
 mediaType : image
-mediaSource : https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A320d5496-c056-488a-a8e2-a90a945ae375?source=next-article&fit=scale-down&quality=highest&width=490&dpr=3
-mediaListImage : https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A320d5496-c056-488a-a8e2-a90a945ae375?source=next-article&fit=scale-down&quality=highest&width=490&dpr=3
+mediaSource : https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A320d5496-c056-488a-a8e2-a90a945ae375?source=next-article&fit=scale-down&quality=highest&width=50&dpr=3
+mediaListImage : https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A320d5496-c056-488a-a8e2-a90a945ae375?source=next-article&fit=scale-down&quality=highest&width=50&dpr=3
 mediaListImage : https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A320d5496-c056-488a-a8e2-a90a945ae375?source=next-article&fit=scale-down&quality=highest&width=490&dpr=3
 ---
 Welcome to slop world: how the hostile internet is driving us crazy
