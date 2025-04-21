@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to slop world: how the hostile internet is driving us crazy"
 date:   2025-02-26 16:00:10 +0000
 categories: [engineering, software engineering]
-permalink: /sil/
+permalink: /sil2/
 thumb : test ..
 author : "Jacob Silverman"
 mediaType : image
