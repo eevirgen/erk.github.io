@@ -9,11 +9,11 @@ author : "Jacob Silverman"
 mediaType : image
 mediaSource : https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A320d5496-c056-488a-a8e2-a90a945ae375?source=next-article&fit=scale-down&quality=highest&width=490&dpr=3
 mediaListImage : https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A320d5496-c056-488a-a8e2-a90a945ae375?source=next-article&fit=scale-down&quality=highest&width=490&dpr=3
-mediaListImage : /style/images/p4-anatomy.png
+mediaListImage : https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A320d5496-c056-488a-a8e2-a90a945ae375?source=next-article&fit=scale-down&quality=highest&width=490&dpr=3
 ---
 Welcome to slop world: how the hostile internet is driving us crazy
   
-![e](https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A320d5496-c056-488a-a8e2-a90a945ae375?source=next-article&fit=scale-down&quality=highest&width=490&dpr=3)
+![e](https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A320d5496-c056-488a-a8e2-a90a945ae375?source=next-article&fit=scale-down&quality=highest&width=490&dpr=3){: style="width:200px;" }
 
 The last bits of fellowship and ingenuity on the web are being swept away by a tide of so-called artificial intelligence
 
@@ -25,7 +25,7 @@ This woman didn’t enter my life out of nowhere. This sort of inscrutable “co
 
 A couple of years ago, the magazine Fast Company called the chumbox “the dirty design secret of the internet” to fill vacant ad space and drive clicks to networks of scammy advertising sites. Chumboxes, which were bolted on to nearly every kind of website in the past decade, reflect an “any-piece-of-content-will-do” philosophy, which has come to dominate today’s internet. As human-created content loses its value, becoming grist for the insatiable data mills of artificial intelligence start-ups, this nonsensical tide of “AI slop” has risen through the cracks.
 
-![e](https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fa8a92043-04da-4fad-b6e8-d437696da1c9.png?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1)
+![e](https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fa8a92043-04da-4fad-b6e8-d437696da1c9.png?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1){: style="width:200px;" }
 
 These days, the chumbox is more than a “design secret”. It’s a business model that has taken over the internet. It’s one reason why I’ve been seeing paid posts from the disturbed woman in Michigan on my feed. In a world where any paid piece of content will do, offering virtual billboard space to anyone and everyone leads to some pretty strange takers. The result is less a broadening of the public square than its pollution. Online discourse has collapsed into incoherence, as a cacophony of voices — not all of them human — fight to be heard and digital monopolies profit from the disorder.
 
@@ -45,7 +45,7 @@ In [an article](https://archive.ph/o/fA7oT/https://nymag.com/intelligencer/arti
 
 Whatever future the prophets of AI might promise, this is actually “the most widespread use yet found for generative-AI apps”, Read noted. “When you look through the reams of slop across the internet, AI seems less like a terrifying apocalyptic machine-god, ready to drag us into a new era of tech, and more like the apotheosis of the smartphone age — the perfect internet marketer’s tool, precision-built to serve the disposable, lowest-common-denominator demands of the infinite scroll.”
 
-![e](https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A013e51d1-db1f-423f-9385-31b0821872f1?source=next-article&fit=scale-down&quality=highest&width=490&dpr=3)
+![e](https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A013e51d1-db1f-423f-9385-31b0821872f1?source=next-article&fit=scale-down&quality=highest&width=490&dpr=3){: style="width:200px;" }
 
 The demands of the infinite scroll, in short, can no longer be fulfilled by humans alone. This is the animating idea behind “dead internet theory”, which proposes, in a deliberately paranoid style, that much of what passes for the internet is automated, inhuman, bots all the way down. Much internet traffic has nothing to do with one human being sending a message to another. It’s background communication and metadata transmitted between billions of pieces of software, ad networks, enterprise platforms, data centres and other infrastructure that most of us never have any cause to think about.
 
@@ -133,7 +133,7 @@ Exasperation began to set in, but also some self-doubt. I looked again for the m
 
 After several hundred more prevaricating words of mangled machine logic, Grok eventually decided, “Upon reflection there’s a possibility I conflated details or misattributed the source.” Grok was “sorry for getting this wrong”. It promised to do better. “How can I assist you next?” it asked.
 
-![e](https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A292dbbba-cc98-4a82-b223-8ce952f31fe1?source=next-article&fit=scale-down&quality=highest&width=490&dpr=3)
+![e](https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A292dbbba-cc98-4a82-b223-8ce952f31fe1?source=next-article&fit=scale-down&quality=highest&width=490&dpr=3){: style="width:200px;" }
 
 The influx of hallucinating chatbots is just the latest sign of the wider internet’s descent into hostility. The internet is now optimised for metrics that have nothing to do with human enjoyment, or convenience, or the profits of anyone except the platform overseers. And it’s only getting worse, as our dependence on these flawed tools grows daily.
 
