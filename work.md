@@ -6,7 +6,7 @@ permalink: /work/
 
 <div class="item col-md-6 col-lg-4 col-xxl-3">
   <div class="brand">
-    <figure><img src="/style/images/zynga.png" title="Zynga" alt=""></figure>
+    <figure><img src="/style/images/4.svg" title="Zynga" alt=""></figure>
   </div>
   <p><span class="location">London</span>
      Director of Engineering at <a href="https://www.zynga.com/" target="_blank">Zynga</a>, leading client engineering for one of Zynga’s flagship live mobile games. Responsible for technical architecture, scalability, performance, and sustainability of a live service platform used by millions of players worldwide. Leading multiple engineering teams and driving long-term technical strategy.
