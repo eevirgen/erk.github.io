@@ -14,6 +14,9 @@ collections:
   project:
     output: true
     permalink: /project/:path/
+  books:
+    output: true
+    permalink: /books/:path/
 
 social:
     - icon: fa-building
@@ -40,6 +43,8 @@ urls:
       url: /work/
     - text: Journal
       url: /journal/
+    - text: Books
+      url: /books/
 
 url: "https://erkut.me"
 baseurl: ""

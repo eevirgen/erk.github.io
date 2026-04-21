@@ -1,0 +1,62 @@
+---
+layout: page
+---
+<div class="card-body">
+  <div class="post-body text-justify">
+    {{ content }}
+  </div>
+
+  <div class="space20"></div>
+
+  <div class="grid grid-view books-grid">
+    <div class="row gx-md-25 gy-20 isotope">
+      {% assign books = site.books | sort: "finished_on" | reverse %}
+      {% if books.size > 0 %}
+        {% for book in books %}
+        {% assign metadata = site.data.books_metadata[book.slug] %}
+        {% assign book_title = book.title | default: metadata.title | default: book.slug %}
+        {% assign book_author = book.author | default: metadata.author %}
+        {% assign book_cover = book.cover | default: metadata.cover %}
+        {% assign book_summary = book.summary | default: metadata.description %}
+        <div class="item col-12">
+          <article class="post books-list-item">
+            {% if book_cover %}
+            <figure class="books-cover"><a href="{{ book.url }}"><img src="{{ book_cover }}" alt="{{ book_title }}" /></a></figure>
+            {% endif %}
+            <div class="books-copy">
+              <div class="post-header">
+                <ul class="post-meta">
+                  {% if book_author %}
+                  <li>{{ book_author }}</li>
+                  {% endif %}
+                  {% if book.finished_on %}
+                  <li>{{ book.finished_on | date: "%b %Y" }}</li>
+                  {% endif %}
+                  {% if book.rating %}
+                  <li>{{ book.rating }}/5</li>
+                  {% endif %}
+                </ul>
+                <h2 class="post-title h5"><a href="{{ book.url }}" class="hover">{{ book_title }}</a></h2>
+              </div>
+              {% if book_summary %}
+              <p>{{ book_summary | strip_html | truncate: 220 }}</p>
+              {% elsif book.excerpt %}
+              <p>{{ book.excerpt | strip_html | truncate: 220 }}</p>
+              {% endif %}
+            </div>
+          </article>
+        </div>
+        {% endfor %}
+      {% else %}
+        <div class="item col-12">
+          <article class="post">
+            <div class="post-header">
+              <h2 class="post-title h5">First book note is ready to be added</h2>
+            </div>
+            <p>Create a file under <code>_books/</code> with at least <code>layout: book</code> and an <code>isbn</code>. Metadata and the cover will be pulled automatically, and the page will appear here.</p>
+          </article>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>

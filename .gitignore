@@ -3,9 +3,8 @@
 *.iml
 out
 gen
+.DS_Store
 .bundle/
 _site/
 vendor/
-Gemfile
-Gemfile.lock
 .jekyll-cache

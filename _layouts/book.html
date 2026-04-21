@@ -1,0 +1,58 @@
+---
+layout: default
+---
+{% assign metadata = site.data.books_metadata[page.slug] %}
+{% assign book_title = metadata.title | default: page.title | default: page.slug %}
+{% assign book_subtitle = metadata.subtitle | default: page.subtitle %}
+{% assign book_author = metadata.author | default: page.author %}
+{% assign book_cover = metadata.cover %}
+{% if page.cover %}
+  {% assign book_cover = page.cover %}
+{% endif %}
+<div class="card-body">
+  <article class="post">
+    <div class="post-header">
+      {% if book_cover %}
+      <figure class="book-detail-cover"><img src="{{ book_cover }}" alt="{{ book_title }}" /></figure>
+      {% endif %}
+      <h2 class="post-title">{{ book_title }}</h2>
+      {% if book_subtitle %}
+      <p>{{ book_subtitle }}</p>
+      {% endif %}
+      <ul class="post-meta">
+        {% if book_author %}
+        <li>{{ book_author }}</li>
+        {% endif %}
+        {% if page.finished_on %}
+        <li>{{ page.finished_on | date: "%d %b %Y" }}</li>
+        {% endif %}
+        {% if page.rating %}
+        <li>{{ page.rating }}/5</li>
+        {% endif %}
+        {% if metadata.publish_date %}
+        <li>Published {{ metadata.publish_date }}</li>
+        {% endif %}
+        {% if metadata.page_count %}
+        <li>{{ metadata.page_count }} pages</li>
+        {% endif %}
+      </ul>
+    </div>
+    <div class="space10"></div>
+    <div class="post-body text-justify">
+      {% if metadata.google_books_url or page.book_url or page.source_url or page.goodreads_url %}
+      <p>
+        {% if metadata.google_books_url %}<a href="{{ metadata.google_books_url }}" target="_blank">Google Books</a>{% endif %}
+        {% if metadata.google_books_url and page.book_url %} | {% endif %}
+        {% if metadata.google_books_url and page.source_url and page.book_url == nil %} | {% endif %}
+        {% if page.book_url %}<a href="{{ page.book_url }}" target="_blank">Original Link</a>{% endif %}
+        {% if page.source_url and page.book_url == nil %}<a href="{{ page.source_url }}" target="_blank">Original Link</a>{% endif %}
+        {% if page.goodreads_url and page.book_url == nil and page.source_url == nil %}<a href="{{ page.goodreads_url }}" target="_blank">Goodreads</a>{% endif %}
+      </p>
+      <hr class="book-source-divider" />
+      {% endif %}
+      <div class="post">
+        {{ content }}
+      </div>
+    </div>
+  </article>
+</div>

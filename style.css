@@ -380,6 +380,55 @@ figure img {
     max-width: 100%;
     height: auto;
 }
+.books-grid .books-cover {
+    width: 25%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.books-grid .books-cover img {
+    width: 100%;
+}
+.books-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+.books-list-item .books-cover {
+    flex: 0 0 4.5rem;
+    width: 4.5rem;
+}
+.books-list-item .books-copy {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+.books-list-item .post-title {
+    margin-bottom: 0.35rem;
+}
+.books-list-item p {
+    margin-bottom: 0;
+}
+.book-detail-cover {
+    width: 10%;
+    margin-left: 0;
+    margin-right: 0;
+}
+.book-detail-cover img {
+    width: 100%;
+}
+.book-source-divider {
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+}
+@media (max-width: 767.98px) {
+    .books-list-item {
+        display: block;
+    }
+    .books-list-item .books-cover {
+        width: 25%;
+        margin-bottom: 0.75rem;
+    }
+}
 /*-----------------------------------------------------------------------------------*/
 /*	SOCIAL ICONS
 /*-----------------------------------------------------------------------------------*/
