@@ -1,8 +1,7 @@
 ---
 layout: book
-isbn: "978-0062651235"
+isbn: "9780345539113"
 finished_on: 2026-05-21
 rating: 5
 ---
 
-Your notes go here. and here

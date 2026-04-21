@@ -13,7 +13,8 @@ layout: page
       {% assign books = site.books | sort: "finished_on" | reverse %}
       {% if books.size > 0 %}
         {% for book in books %}
-        {% assign metadata = site.data.books_metadata[book.slug] %}
+        {% assign book_key = book.path | split:'/' | last | split:'.' | first %}
+        {% assign metadata = site.data.books_metadata[book_key] %}
         {% assign book_title = book.title | default: metadata.title | default: book.slug %}
         {% assign book_author = book.author | default: metadata.author %}
         {% assign book_cover = book.cover | default: metadata.cover %}

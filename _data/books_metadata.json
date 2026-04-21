@@ -1,4 +1,16 @@
 {
+  "a-knight-of-the-seven-kingdom": {
+    "isbn": "9780345539113",
+    "title": "A Knight of the Seven Kingdoms",
+    "subtitle": null,
+    "author": "George R. R. Martin",
+    "description": "AN HBO ORIGINAL SERIES, COMING JANUARY 2026 Taking place nearly a century before the events of A Game of Thrones, A Knight of the Seven Kingdoms compiles the three official prequel novellas to George R. R. Martin's ongoing masterwork, A Song of Ice and Fire. NEW YORK TIMES BESTSELLER • NAMED ONE OF THE BEST BOOKS OF THE YEAR BY LOS ANGELES TIMES AND BUZZFEED These collected adventures recount an age when the Targaryen line still holds the Iron Throne, and the memory of the last dragon has not yet passed from living consciousness. Before Tyrion Lannister and Podrick Payne, there was Dunk and Egg. A young, naïve but ultimately courageous hedge knight, Ser Duncan the Tall towers above his rivals—in stature if not experience. Tagging along is his diminutive squire, a boy called Egg—whose true name is hidden from all he and Dunk encounter. Though more improbable heroes may not be found in all of Westeros, great destinies lay ahead for these two . . . as do powerful foes, royal intrigue, and outrageous exploits. Featuring more than 160 illustrations that artist Gary Gianni created specifically for this book, A Knight of the Seven Kingdoms is a must-have collection that proves chivalry isn't dead—yet. “Stirring . . . As Tolkien has his Silmarillion, so [George R. R.] Martin has this trilogy of foundational tales. They succeed on their own, but in addition, they succeed in making fans want more.”—Kirkus Reviews (starred review)",
+    "publish_date": "2015-10-06",
+    "page_count": 369,
+    "cover": "https://books.google.com/books/content?id=o28lBgAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "google_books_url": "http://books.google.co.uk/books?id=o28lBgAAQBAJ&dq=isbn:9780345539113&hl=&source=gbs_api",
+    "slug": "a-knight-of-the-seven-kingdom"
+  },
   "blood-sweat-and-pixels": {
     "isbn": "9780062651235",
     "title": "Blood, Sweat, and Pixels",
@@ -10,5 +22,17 @@
     "cover": "https://books.google.com/books/content?id=KHVJMQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
     "google_books_url": "http://books.google.co.uk/books?id=KHVJMQAACAAJ&dq=isbn:9780062651235&hl=&source=gbs_api",
     "slug": "blood-sweat-and-pixels"
+  },
+  "the-blade-itself": {
+    "isbn": "9780316387330",
+    "title": "The Blade Itself",
+    "subtitle": null,
+    "author": "Joe Abercrombie",
+    "description": "The first novel in the First Law Trilogy and debut fantasy novel from New York Times bestseller, Joe Abercrombie. Logen Ninefingers, infamous barbarian, has finally run out of luck. Caught in one feud too many, he's on the verge of becoming a dead barbarian -- leaving nothing behind him but bad songs, dead friends, and a lot of happy enemies. Nobleman, dashing officer, and paragon of selfishness, Captain Jezal dan Luthar has nothing more dangerous in mind than fleecing his friends at cards and dreaming of glory in the fencing circle. But war is brewing, and on the battlefields of the frozen North they fight by altogether bloodier rules. Inquisitor Glokta, cripple turned torturer, would like nothing better than to see Jezal come home in a box. But then Glokta hates everyone: cutting treason out of the Union one confession at a time leaves little room for friendship. His latest trail of corpses may lead him right to the rotten heart of government, if he can stay alive long enough to follow it. Enter the wizard, Bayaz. A bald old man with a terrible temper and a pathetic assistant, he could be the First of the Magi, he could be a spectacular fraud, but whatever he is, he's about to make the lives of Logen, Jezal, and Glokta a whole lot more difficult. Murderous conspiracies rise to the surface, old scores are ready to be settled, and the line between hero and villain is sharp enough to draw blood. Unpredictable, compelling, wickedly funny, and packed with unforgettable characters, The Blade Itself is noir fantasy with a real cutting edge.",
+    "publish_date": "2015-09-08",
+    "page_count": 423,
+    "cover": "https://books.google.com/books/content?id=SlizBgAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "google_books_url": "http://books.google.co.uk/books?id=SlizBgAAQBAJ&dq=isbn:9780316387330&hl=&source=gbs_api",
+    "slug": "the-blade-itself"
   }
 }

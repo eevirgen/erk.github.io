@@ -2,6 +2,7 @@
 import json
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -66,7 +67,26 @@ def fetch_json(url: str) -> dict:
 
 
 def fetch_google_books_metadata(isbn: str) -> dict:
-    record = fetch_json(f"https://www.googleapis.com/books/v1/volumes?q=isbn:{isbn}")
+    url = f"https://www.googleapis.com/books/v1/volumes?q=isbn:{isbn}"
+    last_error = None
+
+    for attempt in range(3):
+        try:
+            record = fetch_json(url)
+            break
+        except urllib.error.HTTPError as error:
+            last_error = error
+            if error.code not in (429, 500, 502, 503, 504) or attempt == 2:
+                raise
+            time.sleep(1.5 * (attempt + 1))
+        except urllib.error.URLError as error:
+            last_error = error
+            if attempt == 2:
+                raise
+            time.sleep(1.5 * (attempt + 1))
+    else:
+        raise last_error
+
     items = record.get("items") or []
     if not items:
         return {}
@@ -93,6 +113,8 @@ def fetch_google_books_metadata(isbn: str) -> dict:
 
 def build_metadata(slug: str, isbn: str) -> dict:
     google_record = fetch_google_books_metadata(isbn)
+    if not google_record.get("title"):
+        raise ValueError(f"No Google Books record found for ISBN {isbn}")
 
     return {
         "isbn": isbn,
@@ -112,6 +134,13 @@ def main() -> int:
     BOOKS_DIR.mkdir(exist_ok=True)
     OUTPUT_PATH.parent.mkdir(exist_ok=True)
 
+    existing_metadata = {}
+    if OUTPUT_PATH.exists():
+        try:
+            existing_metadata = json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            existing_metadata = {}
+
     metadata = {}
     failures = []
 
@@ -124,9 +153,17 @@ def main() -> int:
         slug = path.stem
         try:
             metadata[slug] = build_metadata(slug, isbn)
+        except ValueError as error:
+            if slug in existing_metadata:
+                metadata[slug] = existing_metadata[slug]
+            failures.append(f"{path.name}: {error}")
         except urllib.error.HTTPError as error:
+            if slug in existing_metadata:
+                metadata[slug] = existing_metadata[slug]
             failures.append(f"{path.name}: HTTP {error.code}")
         except urllib.error.URLError as error:
+            if slug in existing_metadata:
+                metadata[slug] = existing_metadata[slug]
             failures.append(f"{path.name}: {error.reason}")
 
     OUTPUT_PATH.write_text(

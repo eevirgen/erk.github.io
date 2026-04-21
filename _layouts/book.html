@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-{% assign metadata = site.data.books_metadata[page.slug] %}
+{% assign book_key = page.path | split:'/' | last | split:'.' | first %}
+{% assign metadata = site.data.books_metadata[book_key] %}
 {% assign book_title = metadata.title | default: page.title | default: page.slug %}
 {% assign book_subtitle = metadata.subtitle | default: page.subtitle %}
 {% assign book_author = metadata.author | default: page.author %}
