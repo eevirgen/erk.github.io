@@ -85,6 +85,27 @@ layout: compress
       <meta name="twitter:image:src" content="{{ site.url }}/{{ page.header-img }}">
     {% endif %}
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+      onload="
+        document.querySelectorAll('script[type^=\'math/tex\']').forEach(function(el) {
+          var display = /mode=display/.test(el.type);
+          var out = document.createElement(display ? 'div' : 'span');
+          try { katex.render(el.textContent, out, {displayMode: display, throwOnError: false}); }
+          catch(e) { out.textContent = el.textContent; }
+          el.parentNode.replaceChild(out, el);
+        });
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '\\[', right: '\\]', display: true},
+            {left: '\\(', right: '\\)', display: false},
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false}
+          ],
+          throwOnError: false
+        });
+      "></script>
     <link rel="stylesheet" type="text/css" href="/style/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/style/css/plugins.css">
     <link rel="stylesheet" type="text/css" href="/style/type/type.css">

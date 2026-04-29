@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import json
+import os
 import re
 import sys
 import time
@@ -67,7 +68,9 @@ def fetch_json(url: str) -> dict:
 
 
 def fetch_google_books_metadata(isbn: str) -> dict:
-    url = f"https://www.googleapis.com/books/v1/volumes?q=isbn:{isbn}"
+    api_key = os.environ.get("GOOGLE_BOOKS_API_KEY", "")
+    key_param = f"&key={api_key}" if api_key else ""
+    url = f"https://www.googleapis.com/books/v1/volumes?q=isbn:{isbn}{key_param}"
     last_error = None
 
     for attempt in range(3):
@@ -153,6 +156,7 @@ def main() -> int:
         slug = path.stem
         try:
             metadata[slug] = build_metadata(slug, isbn)
+            time.sleep(0.5)
         except ValueError as error:
             if slug in existing_metadata:
                 metadata[slug] = existing_metadata[slug]

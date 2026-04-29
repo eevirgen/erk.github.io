@@ -1,15 +1,15 @@
 {
-  "a-knight-of-the-seven-kingdom": {
-    "isbn": "9780345539113",
-    "title": "A Knight of the Seven Kingdoms",
+  "a-philosophy-of-software-design": {
+    "isbn": "9781732102217",
+    "title": "A Philosophy of Software Design",
     "subtitle": null,
-    "author": "George R. R. Martin",
-    "description": "AN HBO ORIGINAL SERIES, COMING JANUARY 2026 Taking place nearly a century before the events of A Game of Thrones, A Knight of the Seven Kingdoms compiles the three official prequel novellas to George R. R. Martin's ongoing masterwork, A Song of Ice and Fire. NEW YORK TIMES BESTSELLER • NAMED ONE OF THE BEST BOOKS OF THE YEAR BY LOS ANGELES TIMES AND BUZZFEED These collected adventures recount an age when the Targaryen line still holds the Iron Throne, and the memory of the last dragon has not yet passed from living consciousness. Before Tyrion Lannister and Podrick Payne, there was Dunk and Egg. A young, naïve but ultimately courageous hedge knight, Ser Duncan the Tall towers above his rivals—in stature if not experience. Tagging along is his diminutive squire, a boy called Egg—whose true name is hidden from all he and Dunk encounter. Though more improbable heroes may not be found in all of Westeros, great destinies lay ahead for these two . . . as do powerful foes, royal intrigue, and outrageous exploits. Featuring more than 160 illustrations that artist Gary Gianni created specifically for this book, A Knight of the Seven Kingdoms is a must-have collection that proves chivalry isn't dead—yet. “Stirring . . . As Tolkien has his Silmarillion, so [George R. R.] Martin has this trilogy of foundational tales. They succeed on their own, but in addition, they succeed in making fans want more.”—Kirkus Reviews (starred review)",
-    "publish_date": "2015-10-06",
-    "page_count": 369,
-    "cover": "https://books.google.com/books/content?id=o28lBgAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-    "google_books_url": "http://books.google.co.uk/books?id=o28lBgAAQBAJ&dq=isbn:9780345539113&hl=&source=gbs_api",
-    "slug": "a-knight-of-the-seven-kingdom"
+    "author": "John K. Ousterhout",
+    "description": "\"This book addresses the topic of software design: how to decompose complex software systems into modules (such as classes and methods) that can be implemented relatively independently. The book first introduces the fundamental problem in software design, which is managing complexity. It then discusses philosophical issues about how to approach the software design process and it presents a collection of design principles to apply during software design. The book also introduces a set of red flags that identify design problems. You can apply the ideas in this book to minimize the complexity of large software systems, so that you can write software more quickly and cheaply.\"--Amazon.",
+    "publish_date": "26-07-2021",
+    "page_count": 196,
+    "cover": "https://books.google.com/books/content?id=hkfEzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "google_books_url": "http://books.google.co.uk/books?id=hkfEzgEACAAJ&dq=isbn:9781732102217&hl=&source=gbs_api",
+    "slug": "a-philosophy-of-software-design"
   },
   "blood-sweat-and-pixels": {
     "isbn": "9780062651235",

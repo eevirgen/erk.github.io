@@ -53,6 +53,9 @@ per_page: 6
 paginate_path: "/journal/page/:num/"
 markdown: kramdown
 
+kramdown:
+  math_engine: mathjax
+
 gems:
   - jekyll-paginate
   - jekyll-gist

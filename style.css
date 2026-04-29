@@ -859,3 +859,21 @@ textarea.error {
     opacity: 1;
     visibility: visible;
 }
+
+.katex-display {
+    text-align: left !important;
+    margin: 0.5em 0 !important;
+}
+
+.katex-display > .katex {
+    text-align: left !important;
+}
+
+.katex-display, .katex {
+    text-justify: none !important;
+    word-spacing: normal !important;
+}
+
+.katex, .katex * {
+    text-align: left !important;
+}
