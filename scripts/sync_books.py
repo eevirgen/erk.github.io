@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import html
 import json
 import os
 import re
@@ -67,6 +68,30 @@ def fetch_json(url: str) -> dict:
         return json.load(response)
 
 
+def fetch_books_page_metadata(isbn: str) -> dict:
+    url = f"https://books.google.co.uk/books?vid=ISBN{isbn}&hl=en"
+    request = urllib.request.Request(
+        url,
+        headers={"User-Agent": "Mozilla/5.0"},
+    )
+    with urllib.request.urlopen(request) as response:
+        page = response.read().decode("utf-8", "replace")
+
+    match = re.search(r"<div id=synopsistext[^>]*>(.*?)</div>", page, re.S)
+    if not match:
+        return {}
+
+    description = re.sub(r"<[^>]+>", " ", match.group(1))
+    description = html.unescape(re.sub(r"\s+", " ", description)).strip()
+    if not description:
+        return {}
+
+    return {
+        "description": description,
+        "google_books_url": url,
+    }
+
+
 def fetch_google_books_metadata(isbn: str) -> dict:
     api_key = os.environ.get("GOOGLE_BOOKS_API_KEY", "")
     key_param = f"&key={api_key}" if api_key else ""
@@ -79,6 +104,10 @@ def fetch_google_books_metadata(isbn: str) -> dict:
             break
         except urllib.error.HTTPError as error:
             last_error = error
+            if error.code == 429 and attempt == 2:
+                page_record = fetch_books_page_metadata(isbn)
+                if page_record.get("description"):
+                    return page_record
             if error.code not in (429, 500, 502, 503, 504) or attempt == 2:
                 raise
             time.sleep(1.5 * (attempt + 1))
@@ -116,7 +145,7 @@ def fetch_google_books_metadata(isbn: str) -> dict:
 
 def build_metadata(slug: str, isbn: str) -> dict:
     google_record = fetch_google_books_metadata(isbn)
-    if not google_record.get("title"):
+    if not google_record.get("title") and not google_record.get("description"):
         raise ValueError(f"No Google Books record found for ISBN {isbn}")
 
     return {

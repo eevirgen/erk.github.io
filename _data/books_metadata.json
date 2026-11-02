@@ -1,38 +1,62 @@
 {
-  "a-philosophy-of-software-design": {
-    "isbn": "9781732102217",
-    "title": "A Philosophy of Software Design",
+  "ask-iwata": {
+    "isbn": "9781974721542",
+    "title": null,
     "subtitle": null,
-    "author": "John K. Ousterhout",
-    "description": "\"This book addresses the topic of software design: how to decompose complex software systems into modules (such as classes and methods) that can be implemented relatively independently. The book first introduces the fundamental problem in software design, which is managing complexity. It then discusses philosophical issues about how to approach the software design process and it presents a collection of design principles to apply during software design. The book also introduces a set of red flags that identify design problems. You can apply the ideas in this book to minimize the complexity of large software systems, so that you can write software more quickly and cheaply.\"--Amazon.",
-    "publish_date": "26-07-2021",
-    "page_count": 196,
-    "cover": "https://books.google.com/books/content?id=hkfEzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-    "google_books_url": "http://books.google.co.uk/books?id=hkfEzgEACAAJ&dq=isbn:9781732102217&hl=&source=gbs_api",
-    "slug": "a-philosophy-of-software-design"
+    "author": null,
+    "description": "“On my business card, I am a corporate president. In my mind, I am a game developer. But in my heart, I am a gamer.” —Satoru Iwata THE USA TODAY BESTSELLER \"A welcome salve and a book that anyone who cares about gaming should own and read.\" - Forbes Satoru Iwata was the global president and CEO of Nintendo and a gifted programmer who played a key role in the creation of many of the world’s best-known games. He led the production of innovative platforms such as the Nintendo DS and the Wii, and laid the groundwork for the development of the wildly successful Pokémon Go game and the Nintendo Switch. Known for his analytical and imaginative mind, but even more for his humility and people-first approach to leadership, Satoru Iwata was beloved by game fans and developers worldwide. In this motivational collection, Satoru Iwata addresses diverse subjects such as locating bottlenecks, how success breeds resistance to change, and why programmers should never say no. Drawn from the “Iwata Asks” series of interviews with key contributors to Nintendo games and hardware, and featuring conversations with renowned Mario franchise creator Shigeru Miyamoto and creator of EarthBound Shigesato Itoi, Ask Iwata offers game fans and business leaders an insight into the leadership, development, and design philosophies of one of the most beloved figures in gaming history.",
+    "publish_date": null,
+    "page_count": null,
+    "cover": null,
+    "google_books_url": "https://books.google.co.uk/books?vid=ISBN9781974721542&hl=en",
+    "slug": "ask-iwata"
   },
-  "blood-sweat-and-pixels": {
-    "isbn": "9780062651235",
-    "title": "Blood, Sweat, and Pixels",
-    "subtitle": "The Triumphant, Turbulent Stories Behind How Video Games Are Made",
-    "author": "Jason Schreier",
-    "description": "Developing video games—hero's journey or fool's errand? The creative and technical logistics that go into building today's hottest games can be more harrowing and complex than the games themselves, often seeming like an endless maze or a bottomless abyss. In Blood, Sweat, and Pixels, Jason Schreier takes readers on a fascinating odyssey behind the scenes of video game development, where the creator may be a team of 600 overworked underdogs or a solitary geek genius. Exploring the artistic challenges, technical impossibilities, marketplace demands, and Donkey Kong-sized monkey wrenches thrown into the works by corporate, Blood, Sweat, and Pixels reveals how bringing any game to completion is more than Sisyphean—it's nothing short of miraculous. Taking some of the most popular, bestselling recent games, Schreier immerses readers in the hellfire of the development process, whether it's RPG studio Bioware's challenge to beat an impossible schedule and overcome countless technical nightmares to build Dragon Age: Inquisition; indie developer Eric Barone's single-handed efforts to grow country-life RPG Stardew Valley from one man's vision into a multi-million-dollar franchise; or Bungie spinning out from their corporate overlords at Microsoft to create Destiny, a brand new universe that they hoped would become as iconic as Star Wars and Lord of the Rings—even as it nearly ripped their studio apart. Documenting the round-the-clock crunches, buggy-eyed burnout, and last-minute saves, Blood, Sweat, and Pixels is a journey through development hell—and ultimately a tribute to the dedicated diehards and unsung heroes who scale mountains of obstacles in their quests to create the best games imaginable.",
-    "publish_date": "2017-09-05",
-    "page_count": 288,
-    "cover": "https://books.google.com/books/content?id=KHVJMQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-    "google_books_url": "http://books.google.co.uk/books?id=KHVJMQAACAAJ&dq=isbn:9780062651235&hl=&source=gbs_api",
-    "slug": "blood-sweat-and-pixels"
-  },
-  "the-blade-itself": {
-    "isbn": "9780316387330",
-    "title": "The Blade Itself",
+  "everything-is-predictable": {
+    "isbn": "9781399604062",
+    "title": null,
     "subtitle": null,
-    "author": "Joe Abercrombie",
-    "description": "The first novel in the First Law Trilogy and debut fantasy novel from New York Times bestseller, Joe Abercrombie. Logen Ninefingers, infamous barbarian, has finally run out of luck. Caught in one feud too many, he's on the verge of becoming a dead barbarian -- leaving nothing behind him but bad songs, dead friends, and a lot of happy enemies. Nobleman, dashing officer, and paragon of selfishness, Captain Jezal dan Luthar has nothing more dangerous in mind than fleecing his friends at cards and dreaming of glory in the fencing circle. But war is brewing, and on the battlefields of the frozen North they fight by altogether bloodier rules. Inquisitor Glokta, cripple turned torturer, would like nothing better than to see Jezal come home in a box. But then Glokta hates everyone: cutting treason out of the Union one confession at a time leaves little room for friendship. His latest trail of corpses may lead him right to the rotten heart of government, if he can stay alive long enough to follow it. Enter the wizard, Bayaz. A bald old man with a terrible temper and a pathetic assistant, he could be the First of the Magi, he could be a spectacular fraud, but whatever he is, he's about to make the lives of Logen, Jezal, and Glokta a whole lot more difficult. Murderous conspiracies rise to the surface, old scores are ready to be settled, and the line between hero and villain is sharp enough to draw blood. Unpredictable, compelling, wickedly funny, and packed with unforgettable characters, The Blade Itself is noir fantasy with a real cutting edge.",
-    "publish_date": "2015-09-08",
-    "page_count": 423,
-    "cover": "https://books.google.com/books/content?id=SlizBgAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-    "google_books_url": "http://books.google.co.uk/books?id=SlizBgAAQBAJ&dq=isbn:9780316387330&hl=&source=gbs_api",
-    "slug": "the-blade-itself"
+    "author": null,
+    "description": "SHORTLISTED FOR THE ROYAL SOCIETY TRIVEDI SCIENCE BOOK PRIZE 2024 'Fascinating, witty and perspective-shifting' Oliver Burkeman 'A remarkable book about a remarkable theorem' Will Storr 'Witty, lively and best of all, extremely nerdy. I learned a lot and so will you' Tim Harford Thomas Bayes was an eighteenth-century Presbyterian minister and amateur mathematician whose obscure life belied the profound impact of his work. Like most research into probability at the time, his theorem was mainly seen as relevant to games of chance, like dice and cards. But its implications soon became clear. Bayes' theorem helps explain why highly accurate screening tests can lead to false positives, causing unnecessary anxiety for patients. A failure to account for it in court has put innocent people in jail. But its influence goes far beyond practical applications. A cornerstone of rational thought, Bayesian principles are used in modelling and forecasting. 'Superforecasters', a group of expert predictors who outperform CIA analysts, use a Bayesian approach. And many argue that Bayes' theorem is not just a useful tool, but a description of almost everything - that it is the underlying architecture of rationality, and of the human brain. Fusing biography, razor-sharp science communication and intellectual history, Everything Is Predictable is a captivating tour of Bayes' theorem and its impact on modern life. From medical testing to artificial intelligence, Tom Chivers shows how a single compelling idea can have far-reaching consequences.",
+    "publish_date": null,
+    "page_count": null,
+    "cover": null,
+    "google_books_url": "https://books.google.co.uk/books?vid=ISBN9781399604062&hl=en",
+    "slug": "everything-is-predictable"
+  },
+  "psycho-cybernetics": {
+    "isbn": "9780671700751",
+    "title": null,
+    "subtitle": null,
+    "author": null,
+    "description": "Put more living in your life! Psycho‑Cybernetics is renowned doctor and professor Maxwell Maltz’s simple, scientific, and revolutionary program for health and success. Happiness and success are habits. So are failure and misery. But negative habits can be changed—and Psycho‑Cybernetics shows you how! This is your personal guide to the amazing power of Psycho‑Cybernetics— a program based on one of the world’s classic self‑help books, a multimillion‑copy bestseller proven effective by readers worldwide. Presenting positive attitude as a means for change, Maltz’s teaching has the ring of common sense. Psycho‑Cybernetics is the original text that defined the mind/body connection—the concept that paved the way for most of today’s personal empowerment programs. Turn crises into creative opportunities, dehypnotize yourself from false beliefs, and celebrate new freedom from fear and guilt. Testimonials and stories are interspersed with advice from Maltz, as well as techniques for relaxation and visualization. Dr. Maxwell Maltz teaches you his techniques of “emotional surgery”—the path to a dynamic new self‑image and self‑esteem and to achieving the success and happiness you deserve!",
+    "publish_date": null,
+    "page_count": null,
+    "cover": null,
+    "google_books_url": "https://books.google.co.uk/books?vid=ISBN9780671700751&hl=en",
+    "slug": "psycho-cybernetics"
+  },
+  "the-dream-hotel": {
+    "isbn": "9781526685193",
+    "title": null,
+    "subtitle": null,
+    "author": null,
+    "description": "* LONGLISTED FOR THE WOMEN'S PRIZE FOR FICTION 2025 * * A READ WITH JENNA BOOK CLUB PICK MARCH 2025 * 'A gripping, Kafkaesque foray into an all-too-plausible future' JENNIFER EGAN 'So cleverly conceived, so relevant, that everyone should read it and sweat' THE TIMES 'Extraordinary' RUMAAN ALAM 'Absolutely unputdownable' SANDRA NEWMAN Sara is returning home from a conference abroad when agents from the Risk Assessment Administration pull her aside at the airport. Using data from her dreams, their algorithm has determined that she is at imminent risk of harming her husband. For his safety, she must be transferred to a retention centre, and kept under observation for twenty-one days. But as Sara arrives to be monitored alongside other dangerous dreamers, she discovers that with every deviation from the facility's strict and ever-shifting rules, their stays can be extended - and that getting home to her family is going to cost much more than just three weeks of good behaviour. Then, one day, a new resident arrives, disrupting the order of the facility and leading Sara on a collision course with the very companies that have deprived her of her freedom. The Dream Hotel is a gripping speculative mystery about the seductive dangers of the technologies that are supposed to make our lives easier. As terrifying as it is inventive, it explores how well we can ever truly know those around us - even with the most invasive surveillance systems in place.",
+    "publish_date": null,
+    "page_count": null,
+    "cover": null,
+    "google_books_url": "https://books.google.co.uk/books?vid=ISBN9781526685193&hl=en",
+    "slug": "the-dream-hotel"
+  },
+  "the-thinking-machine": {
+    "isbn": "9780593832691",
+    "title": null,
+    "subtitle": null,
+    "author": null,
+    "description": "Winner of the FT and Schroders Business Book of the Year Award Named a Best Book of 2025 by The Economist “Framed as a biography of Jensen Huang, the only CEO Nvidia has ever had, the book is also something more interesting and revealing: a window onto the intellectual, cultural, and economic ecosystem that has led to the emergence of superpowerful AI.” —James Surowiecki, The Atlantic “A lively biography . . . The story of how Nvidia became the hottest investment on Wall Street and a household name is fascinating.” —Katie Notopoulos, The New York Times Book Review Nvidia is as valuable as Apple and Microsoft. It has shaped the world as we know it. But its story is little known. This is the definitive story of the greatest technology company of our times. In June of 2024, thirty-one years after its founding in a Denny’s restaurant, Nvidia became the most valuable corporation on Earth. The Thinking Machine is the astonishing story of how a designer of video game equipment conquered the market for AI hardware, and in the process re-invented the computer. Essential to Nvidia’s meteoric success is its visionary CEO Jensen Huang, who more than a decade ago, on the basis of a few promising scientific results, bet his entire company on AI. Through unprecedented access to Huang, his friends, his investors, and his employees, Witt documents for the first time the company’s epic rise and its single-minded and ferocious leader, now one of Silicon Valley’s most influential figures. The Thinking Machine is the story of how Nvidia evolved to supplying hundred-million-dollar supercomputers. It is the story of a determined entrepreneur who defied Wall Street to push his radical vision for computing, becoming one of the wealthiest men alive. It is the story of a revolution in computer architecture, and the small group of renegade engineers who made it happen. And it’s the story of our awesome and terrifying AI future, which Huang has billed as the ‘next industrial revolution,’ as a new kind of microchip unlocks hyper-realistic avatars, autonomous robots, self-driving cars, and new movies, art, and books, generated on command. This is the story of the company that is inventing the future.",
+    "publish_date": null,
+    "page_count": null,
+    "cover": null,
+    "google_books_url": "https://books.google.co.uk/books?vid=ISBN9780593832691&hl=en",
+    "slug": "the-thinking-machine"
   }
 }

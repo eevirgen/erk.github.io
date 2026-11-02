@@ -7,32 +7,35 @@ layout: compress
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/style/images/favicon.ico">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.author }}{% endif %}</title>
+    {% if page.url == '/' %}
+      {% capture seo_title %}Erkut Evirgen, Director of Engineering in London{% endcapture %}
+    {% elsif page.title %}
+      {% capture seo_title %}{{ site.title }} - {{ page.title }}{% endcapture %}
+    {% else %}
+      {% capture seo_title %}{{ site.author }}{% endcapture %}
+    {% endif %}
+    {% if page.description %}
+      {% assign seo_description = page.description %}
+    {% else %}
+      {% assign seo_description = site.description %}
+    {% endif %}
+    <title>{{ seo_title | strip }}</title>
     <meta name="author" content="{{ site.author }}" />
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-    <meta name="keywords" content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}" />
+    <meta name="description" content="{{ seo_description }}" />
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
-    <meta content="{{ site.share.fb_appid }}" property="fb:app_id">
-    <meta content="{{ site.title }}" property="og:site_name">
     <meta name="yandex-verification" content="65fed61f0c3f004f" />
     {% if page.noindex %}
       <meta name="robots" content="noindex">
     {% endif %}
 
-    {% if page.title %}
-      <meta content="{{ page.title }}" property="og:title">
-      <meta content="article" property="og:type">
-    {% else %}
-      <meta content="{{ site.title }}" property="og:title">
+    <meta content="{{ seo_title | strip }}" property="og:title">
+    {% if page.url == '/' %}
       <meta content="website" property="og:type">
-    {% endif %}
-
-    {% if page.description %}
-      <meta content="{{ page.description }}" property="og:description">
     {% else %}
-      <meta content="{{ site.description }}" property="og:description">
+      <meta content="article" property="og:type">
     {% endif %}
+    <meta content="{{ seo_description }}" property="og:description">
 
     {% if page.url %}
       <meta content="{{ site.url }}{{ page.url }}" property="og:url">
@@ -40,7 +43,7 @@ layout: compress
 
     {% if page.date %}
       <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
-      <meta content="{{ site.url }}/about/" property="article:author">
+      <meta content="{{ site.url }}/" property="article:author">
     {% endif %}
 
     {% if page.mediaListImage %}
@@ -49,43 +52,66 @@ layout: compress
       <meta content="{{ site.url }}{{ site.avatar_url }}" property="og:image">
     {% endif %}
 
-    {% if page.categories %}
-      {% for category in page.categories limit:1 %}
-        <meta content="{{ category }}" property="article:section">
-      {% endfor %}
-    {% endif %}
-
-    {% if page.tags %}
-      {% for tag in page.tags %}
-        <meta content="{{ tag }}" property="article:tag">
-      {% endfor %}
-    {% endif %}
-
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@{{ site.share.twitter_username }}">
     <meta name="twitter:creator" content="@{{ site.share.twitter_username }}">
-
-    {% if page.title %}
-      <meta name="twitter:title" content="{{ page.title }}">
-    {% else %}
-      <meta name="twitter:title" content="{{ site.title }}">
-    {% endif %}
-
+    <meta name="twitter:title" content="{{ seo_title | strip }}">
     {% if page.url %}
       <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
     {% endif %}
+    <meta name="twitter:description" content="{{ seo_description }}">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "{{ site.url }}/#website",
+          "url": "{{ site.url }}/",
+          "name": "Erkut Evirgen",
+          "description": {{ site.description | jsonify }},
+          "publisher": { "@id": "{{ site.url }}/#person" }
+        },
+        {
+          "@type": "Person",
+          "@id": "{{ site.url }}/#person",
+          "name": "Erkut Evirgen",
+          "url": "{{ site.url }}/",
+          "jobTitle": "Director of Engineering",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Zynga",
+            "url": "https://www.zynga.com/"
+          },
+          "homeLocation": {
+            "@type": "Place",
+            "name": "London"
+          },
+          "email": "erkut@erkut.me",
+          "image": "{{ site.url }}{{ site.avatar_url }}",
+          "sameAs": [
+            "https://uk.linkedin.com/in/erkutevirgen",
+            "https://twitter.com/eevirgen",
+            "https://github.com/eevirgen",
+            "https://wisen.tech/",
+            "http://instagram.com/eevirgen"
+          ],
+          "knowsAbout": [
+            "Distributed systems",
+            "Low-latency systems",
+            "Live games",
+            "Fintech"
+          ]
+        }
+      ]
+    }
+    </script>
 
-    {% if page.description %}
-      <meta name="twitter:description" content="{{ page.description }}">
-    {% else %}
-      <meta name="twitter:description" content="{{ site.description }}">
-    {% endif %}
-
-    {% if page.header-img %}
-      <meta name="twitter:image:src" content="{{ site.url }}/{{ page.header-img }}">
-    {% endif %}
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/style.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
       onload="
@@ -106,13 +132,7 @@ layout: compress
           throwOnError: false
         });
       "></script>
-    <link rel="stylesheet" type="text/css" href="/style/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/style/css/plugins.css">
-    <link rel="stylesheet" type="text/css" href="/style/type/type.css">
-    <link rel="stylesheet" type="text/css" href="/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700" rel="stylesheet">
 
-    <!-- Google Analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -123,82 +143,39 @@ layout: compress
       ga('send', 'pageview');
     </script>
   </head>
-  <body>
-  <div class="container inner">
-    <div class="row gx-md-50">
-      <header class="col-lg-2 mb-30 mb-lg-0">
-        <div class="row gx-0 gy-20 gy-lg-0">
-          <div class="col-6 col-lg-12 order-0 order-lg-1">
-            <h1 class="site-title h3">Erkut Evirgen</h1>
-            <p class="small text-muted mb-0">Engineering Leadership <br class="d-lg-none">for Scaled Products <br>@London, UK</p>
-          </div>
-          <!-- /column -->
-          <div class="col-6 col-lg-12 profile order-2 order-lg-0">
-            <figure class="ml-auto"><a href="/"><img src="/style/images/avatar_erk.jpg" alt=""></a></figure>
-          </div>
-          <div class="col-12 col-lg-12 order-3 order-lg-3 mt-n10 mt-lg-0">
-              <ul class="social social-mute">
-                  <li><a href="https://wisen.tech/" target="_blank"><i class="uil uil-briefcase"></i></a></li>
-                  <li><a href="https://uk.linkedin.com/in/erkutevirgen" target="_blank"><i class="uil uil-linkedin"></i></a></li>
-                  <li><a href="https://twitter.com/eevirgen" target="_blank"><i class="uil uil-twitter"></i></a></li>
-                  <li><a href="http://instagram.com/eevirgen" target="_blank"><i class="uil uil-instagram"></i></a></li>
-                  <li><a href="https://github.com/eevirgen" target="_blank"><i class="uil uil-github"></i></a></li>
-                  <li><a href="https://open.spotify.com/user/1198721457" target="_blank"><i class="uil uil-music"></i></a></li>
-              </ul>
-          </div>
-          <div class="col-12 order-3 order-lg-2">
-            <nav>
-              <ul class="nav">
-                <li class="nav-item {% if page.title == 'About' %}active{% endif %}">
-                  <a class="nav-link" href="/">About {{ page.active }}</a>
-                </li>
-                <li class="nav-item {% if page.title == 'Work' %}active{% endif %}">
-                  <a class="nav-link" href="/work/">Work</a>
-                </li>
-                <li class="nav-item {% if page.title == 'Journal' %}active{% endif %}">
-                  <a class="nav-link" href="/journal/">Journal</a>
-                </li>
-                <li class="nav-item {% if page.title == 'Books' or page.collection == 'books' %}active{% endif %}">
-                  <a class="nav-link" href="/books/">Books</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="mailto:erkut@erkut.me">E-Mail</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+  <body{% if page.title %} class="page-{{ page.title | downcase | replace: ' ', '-' }}"{% endif %}>
+    <div class="shell">
+      <header class="rail">
+        <a class="portrait" href="/"><img src="/style/images/avatar_erk.jpg" alt=""></a>
+        <div class="who">
+          {% if page.url == '/' %}
+          <h1><a class="brand" href="/">Erkut<br>Evirgen<span>.</span></a></h1>
+          {% else %}
+          <a class="brand" href="/">Erkut<br>Evirgen<span>.</span></a>
+          {% endif %}
+          <p>@ London</p>
         </div>
-        <!--p>
-          <div id="js-search">
-              <input id="js-search__input" type="text" class="form-control" placeholder="Type to Search">
-              <ul class="search__results" id="js-search__results"></ul>
-          </div>
-         </p-->
+        <nav>
+          <ul class="nav">
+            <li><a href="/" {% if page.title == 'About' %}aria-current="page"{% endif %}>About</a></li>
+            <li><a href="/work/" {% if page.title == 'Work' %}aria-current="page"{% endif %}>Work</a></li>
+            <li><a href="/journal/" {% if page.title == 'Journal' or page.layout == 'post' or page.layout == 'posts_by_category' %}aria-current="page"{% endif %}>Journal</a></li>
+            <li><a href="/books/" {% if page.title == 'Books' or page.collection == 'books' %}aria-current="page"{% endif %}>Books</a></li>
+            <li><a href="mailto:erkut@erkut.me">E-mail</a></li>
+          </ul>
+        </nav>
+        <ul class="social">
+          <li><a href="https://wisen.tech/" target="_blank" rel="noopener" aria-label="Wisen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4.8V6H7.2A2.2 2.2 0 0 0 5 8.2v2.2a13.6 13.6 0 0 0 14 0V8.2A2.2 2.2 0 0 0 16.8 6H15V4.8A1.8 1.8 0 0 0 13.2 3h-2.4A1.8 1.8 0 0 0 9 4.8zM10.6 6V4.8c0-.3.3-.6.6-.6h1.6c.3 0 .6.3.6.6V6h-2.8zM5 12.7V18a2.2 2.2 0 0 0 2.2 2.2h9.6A2.2 2.2 0 0 0 19 18v-5.3a15.4 15.4 0 0 1-14 0z"/></svg></a></li>
+          <li><a href="https://uk.linkedin.com/in/erkutevirgen" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.7 3.4a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM3.1 9h3.2V21H3.1V9zm5.2 0h3.1v1.6h.04c.43-.8 1.5-1.7 3.1-1.7 3.3 0 3.9 2.2 3.9 5V21H15v-5.9c0-1.4 0-3.2-2-3.2s-2.2 1.5-2.2 3.1V21H8.3V9z"/></svg></a></li>
+          <li><a href="https://twitter.com/eevirgen" target="_blank" rel="noopener" aria-label="Twitter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.2 3.2h3.2l-7 8 8.2 9.6h-6.4l-5-6.1-5.7 6.1H2.3l7.5-8.1L2 3.2h6.6l4.5 5.6 5.1-5.6zm-1.1 16.3h1.8L7 4.8H5.1l12 14.7z"/></svg></a></li>
+          <li><a href="http://instagram.com/eevirgen" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.2A4.8 4.8 0 1 0 12 16.8 4.8 4.8 0 0 0 12 7.2zm0 7.9a3.1 3.1 0 1 1 0-6.2 3.1 3.1 0 0 1 0 6.2zM17.7 6.7a1.12 1.12 0 1 1-2.24 0 1.12 1.12 0 0 1 2.24 0z"/><path d="M16.9 2.8H7.1A4.3 4.3 0 0 0 2.8 7.1v9.8a4.3 4.3 0 0 0 4.3 4.3h9.8a4.3 4.3 0 0 0 4.3-4.3V7.1a4.3 4.3 0 0 0-4.3-4.3zm2.6 14.1a2.6 2.6 0 0 1-2.6 2.6H7.1a2.6 2.6 0 0 1-2.6-2.6V7.1a2.6 2.6 0 0 1 2.6-2.6h9.8a2.6 2.6 0 0 1 2.6 2.6v9.8z"/></svg></a></li>
+          <li><a href="https://github.com/eevirgen" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.9 9.7.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.4-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5.1 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.4 9.4 0 0 1 5 0c2-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 4-2.3 4.8-4.6 5.1.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10.2 10.2 0 0 0 22 12.2C22 6.6 17.5 2 12 2z"/></svg></a></li>
+          <li><a href="https://open.spotify.com/user/1198721457" target="_blank" rel="noopener" aria-label="Spotify"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm4.58 14.42a.62.62 0 0 1-.86.2c-2.36-1.44-5.33-1.77-8.83-.97a.62.62 0 1 1-.28-1.22c3.8-.87 7.06-.5 9.67 1.1.3.18.4.58.3.89zm1.2-2.68a.78.78 0 0 1-1.07.26c-2.7-1.66-6.82-2.14-10.02-1.17a.78.78 0 0 1-.45-1.5c3.68-1.1 8.24-.57 11.36 1.35.36.22.48.7.18 1.06zm.1-2.78C14.85 9.1 9.4 8.92 6.4 9.82a.94.94 0 1 1-.54-1.8c3.46-1.04 9.52-.84 13.3 1.46a.94.94 0 1 1-.96 1.58z"/></svg></a></li>
+        </ul>
       </header>
-      <!-- /header -->
-      <main class="col-lg-10">
-        <div class="card">
-            {{ content }}
-        </div>
-        <!-- /.card -->
+      <main>
+        {{ content }}
       </main>
-      <!-- /main -->
     </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.container -->
-  <script src="/style/js/bootstrap.bundle.min.js"></script>
-  <script src="/style/js/jquery.min.js"></script>
-  <script src="/style/js/plugins.js"></script>
-  <script src="/style/js/scripts.js"></script>
-  <script src="/style/js/super-search.js"></script>
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId={{ site.share.fb_appid }}";
-      fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
   </body>
 </html>
