@@ -8,7 +8,7 @@ layout: compress
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/style/images/favicon.ico">
     {% if page.url == '/' %}
-      {% capture seo_title %}Erkut Evirgen, Director of Engineering in London{% endcapture %}
+      {% capture seo_title %}{{ site.author }}{% endcapture %}
     {% elsif page.title %}
       {% capture seo_title %}{{ site.title }} - {{ page.title }}{% endcapture %}
     {% else %}
